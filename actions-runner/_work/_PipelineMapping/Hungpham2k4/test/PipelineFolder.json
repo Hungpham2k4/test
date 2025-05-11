@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "Hungpham2k4/test",
+  "pipelineDirectory": "test",
+  "workspaceDirectory": "test\\test",
+  "repositories": {
+    "Hungpham2k4/test": {
+      "repositoryPath": "test\\test",
+      "lastRunOn": "05/11/2025 22:43:58 +07:00"
+    }
+  },
+  "lastRunOn": "05/11/2025 22:43:58 +07:00"
+}

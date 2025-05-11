@@ -1,0 +1,167 @@
+[2025-05-11 15:42:19Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-11 15:42:19Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-05-11 15:42:19Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2025-05-11 15:42:19Z INFO Listener] Version: 2.323.0
+[2025-05-11 15:42:19Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-05-11 15:42:19Z INFO Listener] Culture: en-US
+[2025-05-11 15:42:19Z INFO Listener] UI Culture: en-US
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO Listener] Validating directory permissions for: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO CommandLineParser] Parse
+[2025-05-11 15:42:19Z INFO CommandLineParser] Parsing 1 args
+[2025-05-11 15:42:19Z INFO CommandLineParser] parsing argument
+[2025-05-11 15:42:19Z INFO CommandLineParser] HasArgs: False
+[2025-05-11 15:42:19Z INFO CommandLineParser] Adding Command: run
+[2025-05-11 15:42:19Z INFO Listener] Arguments parsed
+[2025-05-11 15:42:19Z INFO Runner] ExecuteCommand
+[2025-05-11 15:42:19Z INFO ConfigurationStore] currentAssemblyLocation: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Listener.dll
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] binPath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] RootFolder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] ConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] MigratedConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] CredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] MigratedCredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'Service': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] ServiceConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service
+[2025-05-11 15:42:19Z INFO CommandSettings] Flag 'help': 'False'
+[2025-05-11 15:42:19Z INFO CommandSettings] Flag 'version': 'False'
+[2025-05-11 15:42:19Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-05-11 15:42:19Z INFO CommandSettings] Flag 'check': 'False'
+[2025-05-11 15:42:19Z INFO CommandSettings] Command 'configure': 'False'
+[2025-05-11 15:42:19Z INFO CommandSettings] Command 'remove': 'False'
+[2025-05-11 15:42:19Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-05-11 15:42:19Z INFO ConfigurationManager] LoadSettings
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsConfigured()
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-11 15:42:19Z INFO ConfigurationManager] Is configured: True
+[2025-05-11 15:42:19Z INFO ConfigurationStore] Read setting file: 306 chars
+[2025-05-11 15:42:19Z INFO ConfigurationManager] Settings Loaded
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-05-11 15:42:19Z INFO CommandSettings] Command 'run': 'True'
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsConfigured()
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-11 15:42:19Z INFO ConfigurationManager] Is configured: True
+[2025-05-11 15:42:19Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-05-11 15:42:19Z INFO Runner] Set runner startup type - Manual
+[2025-05-11 15:42:19Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-11 15:42:19Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-11 15:42:19Z INFO Runner] RunAsync
+[2025-05-11 15:42:19Z INFO ConfigurationManager] LoadSettings
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsConfigured()
+[2025-05-11 15:42:19Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-11 15:42:19Z INFO ConfigurationManager] Is configured: True
+[2025-05-11 15:42:19Z INFO ConfigurationManager] Settings Loaded
+[2025-05-11 15:42:19Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "LAPTOP-IIRU8V1I",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/msXd7nkQ89USSZrPyml6DqYAQGPEuvHtqU8b9dELyziudQrTf1/",
+  "GitHubUrl": "https://github.com/Hungpham2k4/test",
+  "WorkFolder": "_work"
+}
+[2025-05-11 15:42:19Z INFO MessageListener] Loading Credentials
+[2025-05-11 15:42:19Z INFO ConfigurationStore] HasCredentials()
+[2025-05-11 15:42:19Z INFO ConfigurationStore] stored True
+[2025-05-11 15:42:19Z INFO CredentialManager] GetCredentialProvider
+[2025-05-11 15:42:19Z INFO CredentialManager] Creating type OAuth
+[2025-05-11 15:42:19Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:42:19Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-11 15:42:19Z INFO HostContext] Well known config file 'RSACredentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams'
+[2025-05-11 15:42:19Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-11 15:42:19Z INFO MessageListener] Attempt to create session.
+[2025-05-11 15:42:19Z INFO MessageListener] Connecting to the Runner Server...
+[2025-05-11 15:42:19Z INFO RunnerServer] EstablishVssConnection
+[2025-05-11 15:42:19Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-05-11 15:42:19Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-11 15:42:19Z INFO RunnerServer] EstablishVssConnection
+[2025-05-11 15:42:19Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-11 15:42:19Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-11 15:42:19Z INFO RunnerServer] EstablishVssConnection
+[2025-05-11 15:42:19Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-11 15:42:19Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-11 15:42:20Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-11 15:42:20Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-11 15:42:20Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-11 15:42:20Z INFO MessageListener] VssConnection created
+[2025-05-11 15:42:20Z INFO Terminal] WRITE LINE: 
+[2025-05-11 15:42:20Z INFO Terminal] WRITE LINE: 
+[2025-05-11 15:42:20Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-11 15:42:20Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-11 15:42:21Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-11 15:42:22Z INFO MessageListener] Session created.
+[2025-05-11 15:42:22Z INFO Terminal] WRITE LINE: Current runner version: '2.323.0'
+[2025-05-11 15:42:22Z INFO Terminal] WRITE LINE: 2025-05-11 15:42:22Z: Listening for Jobs
+[2025-05-11 15:42:22Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-05-11 15:42:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-11 15:42:23Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-11 15:43:55Z INFO MessageListener] Message '4563949580242394619' received from session '335a4c1e-66ad-4331-a47a-06fdca459116'.
+[2025-05-11 15:43:55Z INFO ConfigurationStore] HasCredentials()
+[2025-05-11 15:43:55Z INFO ConfigurationStore] stored True
+[2025-05-11 15:43:55Z INFO CredentialManager] GetCredentialProvider
+[2025-05-11 15:43:55Z INFO CredentialManager] Creating type OAuth
+[2025-05-11 15:43:55Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-11 15:43:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-11 15:43:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-11 15:43:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-11 15:43:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-11 15:43:57Z INFO JobDispatcher] Job request 0 for plan 092933a8-08a0-48e4-8089-20af99c0f0b2 job 0d7dcd59-9c03-5c80-b852-9140fb08b452 received.
+[2025-05-11 15:43:57Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-11 15:43:57Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-11 15:43:57Z INFO Terminal] WRITE LINE: 2025-05-11 15:43:57Z: Running job: notify
+[2025-05-11 15:43:57Z INFO JobDispatcher] Start renew job request 0 for job 0d7dcd59-9c03-5c80-b852-9140fb08b452.
+[2025-05-11 15:43:58Z INFO JobDispatcher] Successfully renew job 0d7dcd59-9c03-5c80-b852-9140fb08b452, job is valid till 5/11/2025 3:53:33 PM
+[2025-05-11 15:43:58Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 624 2348'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-11 15:43:58Z INFO ProcessInvokerWrapper] Process started with process id 25032, waiting for process exit.
+[2025-05-11 15:43:58Z INFO JobDispatcher] Send job request message to worker for job 0d7dcd59-9c03-5c80-b852-9140fb08b452.
+[2025-05-11 15:43:58Z INFO ProcessChannel] Sending message of length 18567, with hash '42644b81e64b2bd05573a79ee16055a2f30bb81f6f79efb3fee1395f15510696'
+[2025-05-11 15:43:58Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-11 15:43:58Z INFO JobNotification] Entering StartMonitor
+[2025-05-11 15:44:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-11 15:44:06Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-11 15:44:06Z INFO ProcessInvokerWrapper] Finished process 25032 with exit code 102, and elapsed time 00:00:07.7286779.
+[2025-05-11 15:44:06Z INFO JobDispatcher] Worker finished for job 0d7dcd59-9c03-5c80-b852-9140fb08b452. Code: 102
+[2025-05-11 15:44:06Z INFO JobDispatcher] finish job request for job 0d7dcd59-9c03-5c80-b852-9140fb08b452 with result: Failed
+[2025-05-11 15:44:06Z INFO Terminal] WRITE LINE: 2025-05-11 15:44:06Z: Job notify completed with result: Failed
+[2025-05-11 15:44:06Z INFO JobDispatcher] Stop renew job request for job 0d7dcd59-9c03-5c80-b852-9140fb08b452.
+[2025-05-11 15:44:06Z INFO JobDispatcher] job renew has been cancelled, stop renew job 0d7dcd59-9c03-5c80-b852-9140fb08b452.
+[2025-05-11 15:44:06Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-11 15:44:06Z INFO JobNotification] Entering EndMonitor
+[2025-05-11 15:44:06Z INFO MessageListener] Received job status event. JobState: Online
