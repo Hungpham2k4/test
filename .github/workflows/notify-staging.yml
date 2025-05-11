@@ -13,9 +13,14 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        shell: pwsh
         run: |
-          MESSAGE="🚀 Code has been pushed to *main* branch by ${{ github.actor }} in repo ${{ github.repository }}."
-          curl -s -X POST https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage \
-            -d chat_id="${TELEGRAM_CHAT_ID}" \
-            -d text="$MESSAGE" \
-            -d parse_mode="Markdown"
+          $message = "🚀 Code has been pushed to *main* branch by $env:GITHUB_ACTOR in repo $env:GITHUB_REPOSITORY."
+          Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
+            -Method Post `
+            -ContentType "application/x-www-form-urlencoded" `
+            -Body @{
+              chat_id = "$env:TELEGRAM_CHAT_ID"
+              text = $message
+              parse_mode = "Markdown"
+            }
