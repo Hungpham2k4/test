@@ -9,26 +9,29 @@ jobs:
   notify:
     runs-on: self-hosted
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Send Telegram message
+        shell: pwsh
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        shell: powershell
         run: |
           $commitMessage = git log -1 --pretty=format:"%s"
           $commitHash = git log -1 --pretty=format:"%h"
           $message = @"
-        🚀 *New Push to Main*
-        👤 By: $env:GITHUB_ACTOR
-        📦 Repo: $env:GITHUB_REPOSITORY
-        🔖 Commit: `$commitHash`
-        📝 Message: `$commitMessage`
-        "@
+🚀 *New Push to Main*
+👤 By: $env:GITHUB_ACTOR
+📦 Repo: $env:GITHUB_REPOSITORY
+🔖 Commit: $commitHash
+📝 Message: $commitMessage
+  "@
           Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
-        -Method Post `
-        -ContentType "application/x-www-form-urlencoded" `
-        -Body @{
-        chat_id = "$env:TELEGRAM_CHAT_ID"
-        text = $message
-        parse_mode = "Markdown"
-      }
+            -Method Post `
+            -ContentType "application/x-www-form-urlencoded" `
+            -Body @{
+              chat_id = "$env:TELEGRAM_CHAT_ID"
+              text = $message
+              parse_mode = "Markdown"
+            }
