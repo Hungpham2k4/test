@@ -36,13 +36,13 @@ jobs:
           $prUrl = $pr.html_url
 
           $message = @"
-          📣 Pull Request Activity
-          👤 Actor: $actor
-          🔧 Action: $action
-          📂 Repo: $repo
-          🌿 From: $sourceBranch → $targetBranch
-          📝 Title: $prTitle
-          🔗 PR: $prUrl
+          Pull Request Activity
+          Actor: $actor
+          Action: $action
+          Repo: $repo
+          From: $sourceBranch -> $targetBranch
+          Title: $prTitle
+          PR: $prUrl
           "@
           
                     Write-Host "Sending Telegram message:"
