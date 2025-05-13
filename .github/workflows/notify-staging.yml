@@ -15,6 +15,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
+<<<<<<< HEAD
           function Escape-MarkdownV2 {
             param ([string]$text)
             # Escape special characters required by MarkdownV2
@@ -29,10 +30,13 @@ jobs:
             return $text
           }
 
+=======
+>>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
           git config --global --add safe.directory "$PWD"
 
           $commitMessage = git log -1 --pretty=format:"%s"
           $commitHash = git log -1 --pretty=format:"%h"
+<<<<<<< HEAD
 
           $escapedMessage = Escape-MarkdownV2 $commitMessage
           $actor = Escape-MarkdownV2 $env:GITHUB_ACTOR
@@ -44,6 +48,17 @@ jobs:
           📦 Repo: $repo
           🔖 Commit: $commitHash
           📝 Message: $escapedMessage
+=======
+          $actor = $env:GITHUB_ACTOR
+          $repo = $env:GITHUB_REPOSITORY
+
+          $message = @"
+          New Push to Main
+          By: $actor
+          Repo: $repo
+          Commit: $commitHash
+          Message: $commitMessage
+>>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
           "@
 
           Write-Host "Sending Telegram message:"
@@ -55,5 +70,8 @@ jobs:
             -Body (@{
             chat_id = "$env:TELEGRAM_CHAT_ID"
             text = $message
+<<<<<<< HEAD
             parse_mode = "MarkdownV2"
+=======
+>>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
             } | ConvertTo-Json -Depth 10)
