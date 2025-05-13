@@ -1,6 +1,7 @@
 name: Notify on PR to Main
 
 on:
+  push:
   pull_request:
     branches:
       - main
