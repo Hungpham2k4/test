@@ -17,7 +17,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }} # Nhóm leader/mentor
         run: |
           $message = @"
-            📣 *Pull Request Activity on Main*
+            📣 *Pull Request Activity on Test*
           👤 Actor: $env:GITHUB_ACTOR
           🔧 Action: $env:GITHUB_EVENT_NAME ($env:GITHUB_EVENT_ACTION)
           📂 Repo: $env:GITHUB_REPOSITORY
