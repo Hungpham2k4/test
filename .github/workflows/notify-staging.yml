@@ -15,19 +15,13 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          # Cho phép thư mục hiện tại là "safe" với git
-          git config --global --add safe.directory "$PWD"
-
-          # Lấy thông tin commit
-          $commitMessage = git log -1 --pretty=format:"%s"
-          $commitHash = git log -1 --pretty=format:"%h"
-          $fullHash = git log -1 --pretty=format:"%H"
-          $commitUrl = "https://github.com/$env:GITHUB_REPOSITORY/commit/$fullHash"
-          $changedFiles = git show --pretty="" --name-only | Out-String
-
-          # Lấy thông tin từ môi trường GitHub
+          # Lấy thông tin từ GitHub event (github.event)
           $actor = $env:GITHUB_ACTOR
           $repo = $env:GITHUB_REPOSITORY
+          $commitMessage = "${{ github.event.head_commit.message }}"
+          $commitHash = "${{ github.event.head_commit.id }}"
+          $commitUrl = "https://github.com/$repo/commit/$commitHash"
+          $changedFiles = ${{ github.event.head_commit.modified }} # Lấy danh sách tệp thay đổi trong commit
 
           # Tạo nội dung tin nhắn
           $message = @"
