@@ -15,20 +15,24 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         shell: powershell
         run: |
-          $commitMessage = git log -1 --pretty=format:"%s"
-          $commitHash = git log -1 --pretty=format:"%h"
+          $commitMessage = "${{ github.event.head_commit.message }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          $commitHash = "${{ github.event.head_commit.id }}"[0..6] -join ''  # Lấy 7 ký tự đầu
+          $actor = $env:GITHUB_ACTOR
+          $repo = $env:GITHUB_REPOSITORY
+
           $message = @"
           🚀 *New Push to Main*
-          👤 By: $env:GITHUB_ACTOR
-          📦 Repo: $env:GITHUB_REPOSITORY
+          👤 By: $actor
+          📦 Repo: $repo
           🔖 Commit: $commitHash
           📝 Message: $commitMessage
           "@
+
           Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
             -ContentType "application/x-www-form-urlencoded" `
             -Body @{
-            chat_id = "$env:TELEGRAM_CHAT_ID"
-            text = $message
-            parse_mode = "Markdown"
+              chat_id = "$env:TELEGRAM_CHAT_ID"
+              text = $message
+              parse_mode = "MarkdownV2"
             }
