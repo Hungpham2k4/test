@@ -16,6 +16,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
 <<<<<<< HEAD
+<<<<<<< HEAD
           function Escape-MarkdownV2 {
             param ([string]$text)
             # Escape special characters required by MarkdownV2
@@ -49,24 +50,49 @@ jobs:
           🔖 Commit: $commitHash
           📝 Message: $escapedMessage
 =======
+=======
+          # Lấy thông tin từ GitHub event (github.event)
+>>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
           $actor = $env:GITHUB_ACTOR
           $repo = $env:GITHUB_REPOSITORY
+          $commitMessage = "${{ github.event.head_commit.message }}"
+          $commitHash = "${{ github.event.head_commit.id }}"
+          $commitUrl = "https://github.com/$repo/commit/$commitHash"
+          $changedFiles = ${{ github.event.head_commit.modified }} # Lấy danh sách tệp thay đổi trong commit
 
+          # Tạo nội dung tin nhắn
           $message = @"
           New Push to Main
           By: $actor
           Repo: $repo
           Commit: $commitHash
           Message: $commitMessage
+<<<<<<< HEAD
 >>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
+=======
+          Changed Files:
+            $changedFiles
+          Link: $commitUrl
+>>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
           "@
 
           Write-Host "Sending Telegram message:"
             Write-Host $message
             
+            # Encode UTF-8 để tránh lỗi ký tự Unicode
+            $payload = @{
+            chat_id = "$env:TELEGRAM_CHAT_ID"
+            text    = $message
+            } | ConvertTo-Json -Depth 10
+            
+            $utf8Bytes = [System.Text.Encoding]::UTF8.GetBytes($payload)
+            $utf8Body = [System.Text.Encoding]::UTF8.GetString($utf8Bytes)
+            
+            # Gửi tin nhắn đến Telegram
             Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
             -ContentType "application/json" `
+<<<<<<< HEAD
             -Body (@{
             chat_id = "$env:TELEGRAM_CHAT_ID"
             text = $message
@@ -75,3 +101,6 @@ jobs:
 =======
 >>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
             } | ConvertTo-Json -Depth 10)
+=======
+            -Body $utf8Body
+>>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
