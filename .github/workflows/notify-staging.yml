@@ -18,6 +18,10 @@ jobs:
           $commitMessage = "${{ github.event.head_commit.message }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
           $commitHash = "${{ github.event.head_commit.id }}"[0..6] -join ''  # Lấy 7 ký tự đầu
           $actor = $env:GITHUB_ACTOR
+<<<<<<< HEAD
+=======
+          $action = "${{ github.event.action }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+>>>>>>> origin/main
           $repo = $env:GITHUB_REPOSITORY
 
           $message = @"
@@ -25,6 +29,7 @@ jobs:
           👤 By: $actor
           📦 Repo: $repo
           🔖 Commit: $commitHash
+          🔧 Action: $action
           📝 Message: $commitMessage
           "@
 
