@@ -43,7 +43,7 @@ jobs:
           📦 Repo: $repo
           🔖 Commit: $commitHash
           📝 Message: $escapedMessage
-            "@
+          "@
           
           # Debug: Xem nội dung message trước khi gửi
           Write-Output "----- DEBUG MESSAGE START -----"
