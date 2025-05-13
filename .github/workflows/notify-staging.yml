@@ -37,16 +37,16 @@ jobs:
 
           Write-Host "Sending Telegram message:"
             Write-Host $message
-          
+            
             # Encode UTF-8 để tránh lỗi ký tự Unicode
             $payload = @{
             chat_id = "$env:TELEGRAM_CHAT_ID"
             text    = $message
             } | ConvertTo-Json -Depth 10
-          
+            
             $utf8Bytes = [System.Text.Encoding]::UTF8.GetBytes($payload)
             $utf8Body = [System.Text.Encoding]::UTF8.GetString($utf8Bytes)
-          
+            
             # Gửi tin nhắn đến Telegram
             Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
