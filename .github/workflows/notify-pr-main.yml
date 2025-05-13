@@ -1,0 +1,33 @@
+name: Notify on PR to Main
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, closed, ready_for_review, review_requested, review_request_removed, reopened]
+
+jobs:
+  notify:
+    runs-on: self-hosted
+    steps:
+      - name: Send Telegram notification
+        shell: powershell
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }} # Nhóm leader/mentor
+        run: |
+          $message = @"
+            📣 *Pull Request Activity on Main*
+          👤 Actor: $env:GITHUB_ACTOR
+          🔧 Action: $env:GITHUB_EVENT_NAME ($env:GITHUB_EVENT_ACTION)
+          📂 Repo: $env:GITHUB_REPOSITORY
+          🔗 PR URL: https://github.com/$env:GITHUB_REPOSITORY/pull/${{ github.event.pull_request.number }}
+            "@
+          Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
+          -Method Post `
+          -ContentType "application/x-www-form-urlencoded" `
+          -Body @{
+          chat_id = "$env:TELEGRAM_CHAT_ID"
+          text = $message
+          parse_mode = "Markdown"
+          }
