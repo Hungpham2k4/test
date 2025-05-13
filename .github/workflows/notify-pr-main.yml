@@ -22,14 +22,18 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         shell: powershell
         run: |
-          # Escape markdown special characters
-          $actor = $env:GITHUB_ACTOR -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
-          $repo = $env:GITHUB_REPOSITORY -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          function Escape-Markdown {
+            param ([string]$text)
+            return $text -replace '([\\_\*\[\]\(\)\~\`\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          }
+
+          $actor = Escape-Markdown $env:GITHUB_ACTOR
+          $repo = Escape-Markdown $env:GITHUB_REPOSITORY
           $prNumber = "${{ github.event.pull_request.number }}"
-          $action = "${{ github.event.action }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
-          $prTitle = "${{ github.event.pull_request.title }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
-          $sourceBranch = "${{ github.event.pull_request.head.ref }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
-          $targetBranch = "${{ github.event.pull_request.base.ref }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          $action = Escape-Markdown "${{ github.event.action }}"
+          $prTitle = Escape-Markdown "${{ github.event.pull_request.title }}"
+          $sourceBranch = Escape-Markdown "${{ github.event.pull_request.head.ref }}"
+          $targetBranch = Escape-Markdown "${{ github.event.pull_request.base.ref }}"
 
           $message = @"
           📣 *Pull Request Activity*
