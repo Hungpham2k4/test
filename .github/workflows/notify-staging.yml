@@ -17,11 +17,14 @@ jobs:
         run: |
           function Escape-MarkdownV2 {
             param ([string]$text)
+            # Escape special characters required by MarkdownV2
             $escapeChars = '_*[]()~`>#+-=|{}.!'
             foreach ($char in $escapeChars.ToCharArray()) {
                 $pattern = [Regex]::Escape($char)
-                $text = $text -replace $pattern, "\$char"
+                $replacement = '\\' + $char
+                $text = $text -replace $pattern, $replacement
             }
+            # Escape backslashes last
             $text = $text -replace '\\', '\\\\'
             return $text
           }
@@ -43,11 +46,14 @@ jobs:
           📝 Message: $escapedMessage
           "@
 
-          Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
+          Write-Host "Sending Telegram message:"
+            Write-Host $message
+            
+            Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
             -ContentType "application/json" `
             -Body (@{
-              chat_id = "$env:TELEGRAM_CHAT_ID"
-              text = $message
-              parse_mode = "MarkdownV2"
-            } | ConvertTo-Json)
+            chat_id = "$env:TELEGRAM_CHAT_ID"
+            text = $message
+            parse_mode = "MarkdownV2"
+            } | ConvertTo-Json -Depth 10)
