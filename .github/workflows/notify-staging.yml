@@ -16,45 +16,38 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           function Escape-MarkdownV2 {
-              param ([string]$text)
-              # Danh sách ký tự cần escape theo Telegram MarkdownV2
-              $escapeChars = '_*[]()~`>#+-=|{}.!'
-              # Thêm dấu \ trước mỗi ký tự đặc biệt (escape 2 lần cho JSON)
-              foreach ($char in $escapeChars.ToCharArray()) {
-              $text = $text.Replace($char, "\$char")
+            param ([string]$text)
+            $escapeChars = '_*[]()~`>#+-=|{}.!'
+            foreach ($char in $escapeChars.ToCharArray()) {
+                $pattern = [Regex]::Escape($char)
+                $text = $text -replace $pattern, "\$char"
             }
-              # Escape dấu \ thành \\
-              $text = $text.Replace('\', '\\')
-              return $text
+            $text = $text -replace '\\', '\\\\'
+            return $text
           }
-          
-            git config --global --add safe.directory "$PWD"
-            
-            $commitMessage = git log -1 --pretty=format:"%s"
-            $commitHash = git log -1 --pretty=format:"%h"
-            
-            $escapedMessage = Escape-MarkdownV2 $commitMessage
-            $actor = Escape-MarkdownV2 $env:GITHUB_ACTOR
-            $repo = Escape-MarkdownV2 $env:GITHUB_REPOSITORY
-            
-            $message = @"
-            🚀 *New Push to Main*
+
+          git config --global --add safe.directory "$PWD"
+
+          $commitMessage = git log -1 --pretty=format:"%s"
+          $commitHash = git log -1 --pretty=format:"%h"
+
+          $escapedMessage = Escape-MarkdownV2 $commitMessage
+          $actor = Escape-MarkdownV2 $env:GITHUB_ACTOR
+          $repo = Escape-MarkdownV2 $env:GITHUB_REPOSITORY
+
+          $message = @"
+          🚀 *New Push to Main*
           👤 By: $actor
           📦 Repo: $repo
           🔖 Commit: $commitHash
           📝 Message: $escapedMessage
           "@
-          
-          # Debug: Xem nội dung message trước khi gửi
-          Write-Output "----- DEBUG MESSAGE START -----"
-            Write-Output $message
-            Write-Output "----- DEBUG MESSAGE END -----"
-            
-            Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
+
+          Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
             -ContentType "application/json" `
             -Body (@{
-            chat_id = "$env:TELEGRAM_CHAT_ID"
-            text = $message
-            parse_mode = "MarkdownV2"
-            } | ConvertTo-Json -EscapeHandling EscapeNonAscii)
+              chat_id = "$env:TELEGRAM_CHAT_ID"
+              text = $message
+              parse_mode = "MarkdownV2"
+            } | ConvertTo-Json)
