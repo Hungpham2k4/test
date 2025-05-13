@@ -22,16 +22,22 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         shell: powershell
         run: |
+          # Escape markdown special characters
           $actor = $env:GITHUB_ACTOR -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
           $repo = $env:GITHUB_REPOSITORY -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
           $prNumber = "${{ github.event.pull_request.number }}"
           $action = "${{ github.event.action }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          $prTitle = "${{ github.event.pull_request.title }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          $sourceBranch = "${{ github.event.pull_request.head.ref }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          $targetBranch = "${{ github.event.pull_request.base.ref }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
 
           $message = @"
           📣 *Pull Request Activity*
           👤 Actor: $actor
           🔧 Action: $action
           📂 Repo: $repo
+          🌿 From: `$sourceBranch` → `$targetBranch`
+          📝 Title: *$prTitle*
           🔗 PR: [View PR](https://github.com/$repo/pull/$prNumber)
           "@
 
@@ -40,6 +46,6 @@ jobs:
             -ContentType "application/x-www-form-urlencoded" `
             -Body @{
             chat_id = "$env:TELEGRAM_CHAT_ID"
-            text     = $message
+            text = $message
             parse_mode = "MarkdownV2"
             }
