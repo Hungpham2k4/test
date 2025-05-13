@@ -33,7 +33,7 @@ jobs:
           🔧 Action: $action
           📂 Repo: $repo
           🔗 PR: [View PR](https://github.com/$repo/pull/$prNumber)
-            "@
+          "@
 
           Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
