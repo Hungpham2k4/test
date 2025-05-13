@@ -10,31 +10,37 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Send Telegram message
+        shell: powershell
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        shell: powershell
         run: |
-          $commitMessage = "${{ github.event.head_commit.message }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
-          $commitHash = "${{ github.event.head_commit.id }}"[0..6] -join ''
-          $actor = $env:GITHUB_ACTOR
-          $action = "${{ github.event.action }}" -replace '([_\*\[\]\(\)\~\>\#\+\-\=\|\{\}\.\!])', '\\$1'
-          $repo = $env:GITHUB_REPOSITORY
+          function Escape-Markdown {
+            param ([string]$text)
+            return $text -replace '([\\_\*\[\]\(\)\~\`\>\#\+\-\=\|\{\}\.\!])', '\\$1'
+          }
+
+          git config --global --add safe.directory "$PWD"
+          $commitMessage = git log -1 --pretty=format:"%s"
+          $commitHash = git log -1 --pretty=format:"%h"
+
+          $escapedMessage = Escape-Markdown $commitMessage
+          $actor = Escape-Markdown $env:GITHUB_ACTOR
+          $repo = Escape-Markdown $env:GITHUB_REPOSITORY
 
           $message = @"
           🚀 *New Push to Main*
           👤 By: $actor
           📦 Repo: $repo
           🔖 Commit: $commitHash
-          🔧 Action: $action
-          📝 Message: $commitMessage
+          📝 Message: $escapedMessage
           "@
 
           Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
-            -Method Post `
-            -ContentType "application/x-www-form-urlencoded" `
-            -Body @{
-              chat_id = "$env:TELEGRAM_CHAT_ID"
-              text = $message
-              parse_mode = "MarkdownV2"
-            }
+          -Method Post `
+          -ContentType "application/x-www-form-urlencoded" `
+          -Body @{
+          chat_id = "$env:TELEGRAM_CHAT_ID"
+          text = $message
+          parse_mode = "MarkdownV2"
+          }
