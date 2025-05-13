@@ -17,6 +17,7 @@ jobs:
         run: |
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           function Escape-MarkdownV2 {
             param ([string]$text)
             # Escape special characters required by MarkdownV2
@@ -53,6 +54,9 @@ jobs:
 =======
           # Lấy thông tin từ GitHub event (github.event)
 >>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
+=======
+          # Lấy thông tin từ GitHub event (github.event)
+>>>>>>> origin/main
           $actor = $env:GITHUB_ACTOR
           $repo = $env:GITHUB_REPOSITORY
           $commitMessage = "${{ github.event.head_commit.message }}"
@@ -68,12 +72,18 @@ jobs:
           Commit: $commitHash
           Message: $commitMessage
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
 =======
           Changed Files:
             $changedFiles
           Link: $commitUrl
 >>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
+=======
+          Changed Files:
+            $changedFiles
+          Link: $commitUrl
+>>>>>>> origin/main
           "@
 
           Write-Host "Sending Telegram message:"
@@ -93,6 +103,7 @@ jobs:
             -Method Post `
             -ContentType "application/json" `
 <<<<<<< HEAD
+<<<<<<< HEAD
             -Body (@{
             chat_id = "$env:TELEGRAM_CHAT_ID"
             text = $message
@@ -104,3 +115,6 @@ jobs:
 =======
             -Body $utf8Body
 >>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
+=======
+            -Body $utf8Body
+>>>>>>> origin/main
