@@ -15,43 +15,46 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          # Đọc event JSON từ GitHub cung cấp
-          $event = Get-Content $env:GITHUB_EVENT_PATH | ConvertFrom-Json
+          # Cho phép thư mục hiện tại là "safe" với git
+          git config --global --add safe.directory "$PWD"
 
-          # Lấy commit cuối cùng từ push
-          $lastCommit = $event.commits[-1]
+          # Lấy thông tin commit
+          $commitMessage = git log -1 --pretty=format:"%s"
+          $commitHash = git log -1 --pretty=format:"%h"
+          $fullHash = git log -1 --pretty=format:"%H"
+          $commitUrl = "https://github.com/$env:GITHUB_REPOSITORY/commit/$fullHash"
+          $changedFiles = git show --pretty="" --name-only | Out-String
 
-          $commitMessage = $lastCommit.message
-          $commitAuthor = $lastCommit.author.name
-          $commitId = $lastCommit.id.Substring(0, 7)
-          $commitUrl = $lastCommit.url
+          # Lấy thông tin từ môi trường GitHub
+          $actor = $env:GITHUB_ACTOR
           $repo = $env:GITHUB_REPOSITORY
 
-          # Gộp danh sách file đã thay đổi
-          $changedFiles = @()
-          if ($lastCommit.added)    { $changedFiles += $lastCommit.added }
-          if ($lastCommit.modified) { $changedFiles += $lastCommit.modified }
-          if ($lastCommit.removed)  { $changedFiles += $lastCommit.removed }
-          $changedFilesText = $changedFiles -join ', '
-
-          # Soạn tin nhắn thuần text (không Markdown để tránh lỗi escape)
+          # Tạo nội dung tin nhắn
           $message = @"
           New Push to Main
-          By: $commitAuthor
+          By: $actor
           Repo: $repo
-          Commit: $commitId
+          Commit: $commitHash
           Message: $commitMessage
-          Changed Files: $changedFilesText
+          Changed Files:
+            $changedFiles
           Link: $commitUrl
           "@
-          
-                    Write-Host "Sending Telegram message:"
+
+          Write-Host "Sending Telegram message:"
             Write-Host $message
             
+            # Encode UTF-8 để tránh lỗi ký tự Unicode
+            $payload = @{
+            chat_id = "$env:TELEGRAM_CHAT_ID"
+            text    = $message
+            } | ConvertTo-Json -Depth 10
+            
+            $utf8Bytes = [System.Text.Encoding]::UTF8.GetBytes($payload)
+            $utf8Body = [System.Text.Encoding]::UTF8.GetString($utf8Bytes)
+            
+            # Gửi tin nhắn đến Telegram
             Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
             -ContentType "application/json" `
-            -Body (@{
-            chat_id = "$env:TELEGRAM_CHAT_ID"
-            text = $message
-            } | ConvertTo-Json -Depth 10)
+            -Body $utf8Body
