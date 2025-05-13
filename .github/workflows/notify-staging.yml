@@ -15,22 +15,37 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          git config --global --add safe.directory "$PWD"
+          # Đọc event JSON từ GitHub cung cấp
+          $event = Get-Content $env:GITHUB_EVENT_PATH | ConvertFrom-Json
 
-          $commitMessage = git log -1 --pretty=format:"%s"
-          $commitHash = git log -1 --pretty=format:"%h"
-          $actor = $env:GITHUB_ACTOR
+          # Lấy commit cuối cùng từ push
+          $lastCommit = $event.commits[-1]
+
+          $commitMessage = $lastCommit.message
+          $commitAuthor = $lastCommit.author.name
+          $commitId = $lastCommit.id.Substring(0, 7)
+          $commitUrl = $lastCommit.url
           $repo = $env:GITHUB_REPOSITORY
 
+          # Gộp danh sách file đã thay đổi
+          $changedFiles = @()
+          if ($lastCommit.added)    { $changedFiles += $lastCommit.added }
+          if ($lastCommit.modified) { $changedFiles += $lastCommit.modified }
+          if ($lastCommit.removed)  { $changedFiles += $lastCommit.removed }
+          $changedFilesText = $changedFiles -join ', '
+
+          # Soạn tin nhắn thuần text (không Markdown để tránh lỗi escape)
           $message = @"
           New Push to Main
-          By: $actor
+          By: $commitAuthor
           Repo: $repo
-          Commit: $commitHash
+          Commit: $commitId
           Message: $commitMessage
+          Changed Files: $changedFilesText
+          Link: $commitUrl
           "@
-
-          Write-Host "Sending Telegram message:"
+          
+                    Write-Host "Sending Telegram message:"
             Write-Host $message
             
             Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
