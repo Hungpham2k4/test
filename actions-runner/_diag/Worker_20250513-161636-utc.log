@@ -1,18 +1,18 @@
-[2025-05-13 16:13:28Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
-[2025-05-13 16:13:28Z INFO Worker] Version: 2.323.0
-[2025-05-13 16:13:28Z INFO Worker] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
-[2025-05-13 16:13:28Z INFO Worker] Culture: en-US
-[2025-05-13 16:13:28Z INFO Worker] UI Culture: en-US
-[2025-05-13 16:13:28Z INFO Worker] Waiting to receive the job message from the channel.
-[2025-05-13 16:13:28Z INFO ProcessChannel] Receiving message of length 19631, with hash 'b4b0b033c387c15edfbda267294bf0d6a7424d70e4d544ca15d1bbc72480ea1f'
-[2025-05-13 16:13:28Z INFO Worker] Message received.
-[2025-05-13 16:13:28Z INFO Worker] Job message:
+[2025-05-13 16:16:36Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-13 16:16:36Z INFO Worker] Version: 2.323.0
+[2025-05-13 16:16:36Z INFO Worker] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-05-13 16:16:36Z INFO Worker] Culture: en-US
+[2025-05-13 16:16:36Z INFO Worker] UI Culture: en-US
+[2025-05-13 16:16:36Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-05-13 16:16:36Z INFO ProcessChannel] Receiving message of length 19613, with hash '2dec3c2fe7be988022853b299cc90b55f6cef39689a5266c5fdc53cd4de23bb9'
+[2025-05-13 16:16:36Z INFO Worker] Message received.
+[2025-05-13 16:16:36Z INFO Worker] Job message:
  {
   "fileTable": [
     ".github/workflows/notify-staging.yml"
@@ -171,7 +171,7 @@
         ]
       },
       "condition": "success()",
-      "id": "ea4489c0-7946-47ea-9ad8-2d5c3a9ff0a5",
+      "id": "f93a0e42-2e11-4e15-bced-342570c50303",
       "name": "__run"
     }
   ],
@@ -274,7 +274,7 @@
       "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
     },
     "system.orchestrationId": {
-      "value": "574d05f0-6af4-41df-8599-74d81822fd04.notify.__default"
+      "value": "e397db8b-7f9f-4b38-8445-f9e74d648bd3.notify.__default"
     },
     "system.phaseDisplayName": {
       "value": "notify"
@@ -291,7 +291,7 @@
     "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
     "planType": "actions",
     "version": 0,
-    "planId": "574d05f0-6af4-41df-8599-74d81822fd04",
+    "planId": "e397db8b-7f9f-4b38-8445-f9e74d648bd3",
     "planGroup": null,
     "artifactUri": null,
     "artifactLocation": null,
@@ -299,11 +299,11 @@
     "owner": null
   },
   "timeline": {
-    "id": "574d05f0-6af4-41df-8599-74d81822fd04",
+    "id": "e397db8b-7f9f-4b38-8445-f9e74d648bd3",
     "changeId": 0,
     "location": null
   },
-  "jobId": "5a302fb6-683d-5aff-af39-5c58467bbb6f",
+  "jobId": "2e2ff58a-3113-58a9-a06f-b1c61be2f1ed",
   "jobDisplayName": "notify",
   "jobName": "__default",
   "requestId": 0,
@@ -321,7 +321,7 @@
           "GenerateIdTokenUrl": ""
         },
         "name": "SystemVssConnection",
-        "url": "https://run-actions-3-azure-eastus.actions.githubusercontent.com/28/",
+        "url": "https://run-actions-2-azure-eastus.actions.githubusercontent.com/51/",
         "authorization": {
           "parameters": {
             "AccessToken": "***"
@@ -343,7 +343,7 @@
         },
         {
           "k": "sha",
-          "v": "002d4e735508a6eeeec4e90effb3621d1052b2a6"
+          "v": "a1ec9e025251f7607bdf08eceb40041eee06843d"
         },
         {
           "k": "repository",
@@ -363,11 +363,11 @@
         },
         {
           "k": "run_id",
-          "v": "15001548494"
+          "v": "15001605806"
         },
         {
           "k": "run_number",
-          "v": "63"
+          "v": "64"
         },
         {
           "k": "retention_days",
@@ -444,7 +444,7 @@
             "d": [
               {
                 "k": "after",
-                "v": "002d4e735508a6eeeec4e90effb3621d1052b2a6"
+                "v": "a1ec9e025251f7607bdf08eceb40041eee06843d"
               },
               {
                 "k": "base_ref",
@@ -452,7 +452,7 @@
               },
               {
                 "k": "before",
-                "v": "867403d5acc9a86d5ea87cc6b16e5819b0da7192"
+                "v": "002d4e735508a6eeeec4e90effb3621d1052b2a6"
               },
               {
                 "k": "commits",
@@ -508,23 +508,23 @@
                         },
                         {
                           "k": "id",
-                          "v": "002d4e735508a6eeeec4e90effb3621d1052b2a6"
+                          "v": "a1ec9e025251f7607bdf08eceb40041eee06843d"
                         },
                         {
                           "k": "message",
-                          "v": "test push 123"
+                          "v": "test"
                         },
                         {
                           "k": "timestamp",
-                          "v": "2025-05-13T23:13:07+07:00"
+                          "v": "2025-05-13T23:16:00+07:00"
                         },
                         {
                           "k": "tree_id",
-                          "v": "31c15c69793d1218e4db31b80465ff0b67883368"
+                          "v": "0d7309e0ea1299743d3f01020f34ba69d6c1850e"
                         },
                         {
                           "k": "url",
-                          "v": "https://github.com/Hungpham2k4/test/commit/002d4e735508a6eeeec4e90effb3621d1052b2a6"
+                          "v": "https://github.com/Hungpham2k4/test/commit/a1ec9e025251f7607bdf08eceb40041eee06843d"
                         }
                       ]
                     }
@@ -533,7 +533,7 @@
               },
               {
                 "k": "compare",
-                "v": "https://github.com/Hungpham2k4/test/compare/867403d5acc9...002d4e735508"
+                "v": "https://github.com/Hungpham2k4/test/compare/002d4e735508...a1ec9e025251"
               },
               {
                 "k": "created",
@@ -598,23 +598,23 @@
                     },
                     {
                       "k": "id",
-                      "v": "002d4e735508a6eeeec4e90effb3621d1052b2a6"
+                      "v": "a1ec9e025251f7607bdf08eceb40041eee06843d"
                     },
                     {
                       "k": "message",
-                      "v": "test push 123"
+                      "v": "test"
                     },
                     {
                       "k": "timestamp",
-                      "v": "2025-05-13T23:13:07+07:00"
+                      "v": "2025-05-13T23:16:00+07:00"
                     },
                     {
                       "k": "tree_id",
-                      "v": "31c15c69793d1218e4db31b80465ff0b67883368"
+                      "v": "0d7309e0ea1299743d3f01020f34ba69d6c1850e"
                     },
                     {
                       "k": "url",
-                      "v": "https://github.com/Hungpham2k4/test/commit/002d4e735508a6eeeec4e90effb3621d1052b2a6"
+                      "v": "https://github.com/Hungpham2k4/test/commit/a1ec9e025251f7607bdf08eceb40041eee06843d"
                     }
                   ]
                 }
@@ -974,7 +974,7 @@
                     },
                     {
                       "k": "pushed_at",
-                      "v": 1747152764.0
+                      "v": 1747152943.0
                     },
                     {
                       "k": "releases_url",
@@ -1036,7 +1036,7 @@
                     },
                     {
                       "k": "updated_at",
-                      "v": "2025-05-13T16:10:34Z"
+                      "v": "2025-05-13T16:12:48Z"
                     },
                     {
                       "k": "url",
@@ -1154,7 +1154,7 @@
         },
         {
           "k": "workflow_sha",
-          "v": "002d4e735508a6eeeec4e90effb3621d1052b2a6"
+          "v": "a1ec9e025251f7607bdf08eceb40041eee06843d"
         },
         {
           "k": "repository_id",
@@ -1200,83 +1200,83 @@
   },
   "billingOwnerId": "U_kgDOBuje0g"
 }
-[2025-05-13 16:13:28Z INFO JobRunner] Job ID 5a302fb6-683d-5aff-af39-5c58467bbb6f
-[2025-05-13 16:13:28Z INFO ConfigurationStore] currentAssemblyLocation: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.dll
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO ConfigurationStore] binPath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO ConfigurationStore] RootFolder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
-[2025-05-13 16:13:28Z INFO ConfigurationStore] ConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated'
-[2025-05-13 16:13:28Z INFO ConfigurationStore] MigratedConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
-[2025-05-13 16:13:28Z INFO ConfigurationStore] CredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated'
-[2025-05-13 16:13:28Z INFO ConfigurationStore] MigratedCredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'Service': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service'
-[2025-05-13 16:13:28Z INFO ConfigurationStore] ServiceConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service
-[2025-05-13 16:13:28Z INFO ConfigurationStore] Read setting file: 306 chars
-[2025-05-13 16:13:28Z INFO JobRunner] Initializing launch client
-[2025-05-13 16:13:28Z INFO JobServerQueue] Initializing results client
-[2025-05-13 16:13:28Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
-[2025-05-13 16:13:28Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
-[2025-05-13 16:13:28Z INFO JobServerQueue] Start process web console line queue.
-[2025-05-13 16:13:28Z INFO JobServerQueue] Start process file upload queue.
-[2025-05-13 16:13:28Z INFO JobServerQueue] Start results file upload queue.
-[2025-05-13 16:13:28Z INFO JobServerQueue] Starting results-based upload queue...
-[2025-05-13 16:13:28Z INFO JobServerQueue] Start process timeline update queue.
-[2025-05-13 16:13:28Z INFO ExecutionContext] Initialize GitHub context
-[2025-05-13 16:13:28Z INFO ExecutionContext] Initialize Env context
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
-[2025-05-13 16:13:28Z INFO JobRunner] Starting the job execution context.
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
-[2025-05-13 16:13:28Z INFO JobRunner] Validating directory permissions for: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Tools': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_tool'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Temp': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_temp'
-[2025-05-13 16:13:28Z INFO JobRunner] Getting job extension.
-[2025-05-13 16:13:28Z INFO JobRunner] Initialize job. Getting all job steps.
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known config file 'SetupInfo': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.setup_info'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:28Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
-[2025-05-13 16:13:28Z INFO PipelineDirectoryManager] Loading tracking config if exists: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_PipelineMapping\Hungpham2k4/test\PipelineFolder.json
-[2025-05-13 16:13:29Z ERR  JobExtension] Caught exception from JobExtension Initialization: Newtonsoft.Json.JsonReaderException: Invalid property identifier character: <. Path 'repositories', line 11, position 0.
+[2025-05-13 16:16:36Z INFO JobRunner] Job ID 2e2ff58a-3113-58a9-a06f-b1c61be2f1ed
+[2025-05-13 16:16:36Z INFO ConfigurationStore] currentAssemblyLocation: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.dll
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO ConfigurationStore] binPath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO ConfigurationStore] RootFolder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-13 16:16:36Z INFO ConfigurationStore] ConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated'
+[2025-05-13 16:16:36Z INFO ConfigurationStore] MigratedConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 16:16:36Z INFO ConfigurationStore] CredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated'
+[2025-05-13 16:16:36Z INFO ConfigurationStore] MigratedCredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'Service': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service'
+[2025-05-13 16:16:36Z INFO ConfigurationStore] ServiceConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service
+[2025-05-13 16:16:36Z INFO ConfigurationStore] Read setting file: 306 chars
+[2025-05-13 16:16:36Z INFO JobRunner] Initializing launch client
+[2025-05-13 16:16:36Z INFO JobServerQueue] Initializing results client
+[2025-05-13 16:16:36Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-05-13 16:16:36Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-05-13 16:16:36Z INFO JobServerQueue] Start process web console line queue.
+[2025-05-13 16:16:36Z INFO JobServerQueue] Start process file upload queue.
+[2025-05-13 16:16:36Z INFO JobServerQueue] Start results file upload queue.
+[2025-05-13 16:16:36Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-05-13 16:16:36Z INFO JobServerQueue] Start process timeline update queue.
+[2025-05-13 16:16:36Z INFO ExecutionContext] Initialize GitHub context
+[2025-05-13 16:16:36Z INFO ExecutionContext] Initialize Env context
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:16:36Z INFO JobRunner] Starting the job execution context.
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:16:36Z INFO JobRunner] Validating directory permissions for: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Tools': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_tool'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Temp': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_temp'
+[2025-05-13 16:16:36Z INFO JobRunner] Getting job extension.
+[2025-05-13 16:16:36Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known config file 'SetupInfo': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.setup_info'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:36Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:16:36Z INFO PipelineDirectoryManager] Loading tracking config if exists: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_PipelineMapping\Hungpham2k4/test\PipelineFolder.json
+[2025-05-13 16:16:36Z ERR  JobExtension] Caught exception from JobExtension Initialization: Newtonsoft.Json.JsonReaderException: Invalid property identifier character: <. Path 'repositories', line 11, position 0.
    at Newtonsoft.Json.JsonTextReader.ParseProperty()
    at Newtonsoft.Json.JsonTextReader.ParseObject()
    at Newtonsoft.Json.JsonTextReader.Read()
@@ -1293,21 +1293,21 @@
    at GitHub.Runner.Worker.TrackingManager.LoadIfExists(IExecutionContext executionContext, String file)
    at GitHub.Runner.Worker.PipelineDirectoryManager.PrepareDirectory(IExecutionContext executionContext, WorkspaceOptions workspace)
    at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
-[2025-05-13 16:13:29Z INFO ExecutionContext] Publish step telemetry for current step {
+[2025-05-13 16:16:36Z INFO ExecutionContext] Publish step telemetry for current step {
   "action": "setup_job",
   "type": "runner",
   "stage": "Pre",
-  "stepId": "a5d53230-fb53-4e6f-8c6a-cee254a9817b",
+  "stepId": "f1a906fb-6975-4cf6-8d12-beb51b93e80f",
   "result": "failed",
   "errorMessages": [
     "Invalid property identifier character: <. Path 'repositories', line 11, position 0."
   ],
   "executionTimeInSeconds": 1,
-  "startTime": "2025-05-13T16:13:28.99227Z",
-  "finishTime": "2025-05-13T16:13:29.0099566Z"
+  "startTime": "2025-05-13T16:16:36.9531523Z",
+  "finishTime": "2025-05-13T16:16:36.9704477Z"
 }.
-[2025-05-13 16:13:29Z ERR  JobRunner] Job initialize failed.
-[2025-05-13 16:13:29Z ERR  JobRunner] Caught exception from InitializeJob: Newtonsoft.Json.JsonReaderException: Invalid property identifier character: <. Path 'repositories', line 11, position 0.
+[2025-05-13 16:16:36Z ERR  JobRunner] Job initialize failed.
+[2025-05-13 16:16:36Z ERR  JobRunner] Caught exception from InitializeJob: Newtonsoft.Json.JsonReaderException: Invalid property identifier character: <. Path 'repositories', line 11, position 0.
    at Newtonsoft.Json.JsonTextReader.ParseProperty()
    at Newtonsoft.Json.JsonTextReader.ParseObject()
    at Newtonsoft.Json.JsonTextReader.Read()
@@ -1325,34 +1325,34 @@
    at GitHub.Runner.Worker.PipelineDirectoryManager.PrepareDirectory(IExecutionContext executionContext, WorkspaceOptions workspace)
    at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
    at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
-[2025-05-13 16:13:29Z INFO JobRunner] Shutting down the job server queue.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Fire signal to shutdown all queues.
-[2025-05-13 16:13:29Z INFO Worker] Listening for cancel message from the channel.
-[2025-05-13 16:13:29Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
-[2025-05-13 16:13:29Z INFO ResultServer] Successfully started websocket client.
-[2025-05-13 16:13:29Z INFO JobServerQueue] All queue process task stopped.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'a5d53230-fb53-4e6f-8c6a-cee254a9817b', success rate: 1/1.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Web console line queue drained.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Uploading 2 files in one shot.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
-[2025-05-13 16:13:29Z INFO JobServerQueue] File upload queue drained.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Starting results-based upload queue...
-[2025-05-13 16:13:29Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Got a step log file to send to results service.
-[2025-05-13 16:13:29Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\blocks\574d05f0-6af4-41df-8599-74d81822fd04_a5d53230-fb53-4e6f-8c6a-cee254a9817b.1
-[2025-05-13 16:13:32Z INFO JobServerQueue] Got a job log file to send to results service.
-[2025-05-13 16:13:32Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\blocks\574d05f0-6af4-41df-8599-74d81822fd04_5a302fb6-683d-5aff-af39-5c58467bbb6f.1
-[2025-05-13 16:13:32Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
-[2025-05-13 16:13:32Z INFO JobServerQueue] Results upload queue drained.
-[2025-05-13 16:13:33Z INFO JobServerQueue] Job timeline record has been updated for the first time.
-[2025-05-13 16:13:33Z INFO JobServerQueue] Timeline update queue drained.
-[2025-05-13 16:13:33Z INFO JobServerQueue] Disposing job server ...
-[2025-05-13 16:13:33Z INFO JobServerQueue] Disposing results server ...
-[2025-05-13 16:13:33Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
-[2025-05-13 16:13:33Z INFO TempDirectoryManager] Cleaning runner temp folder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_temp
-[2025-05-13 16:13:33Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
-[2025-05-13 16:13:33Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
-[2025-05-13 16:13:33Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
-[2025-05-13 16:13:33Z INFO HostContext] Well known config file 'Telemetry': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\.telemetry'
-[2025-05-13 16:13:33Z INFO JobRunner] Raising job completed against run service
-[2025-05-13 16:13:34Z INFO Worker] Job completed.
+[2025-05-13 16:16:36Z INFO JobRunner] Shutting down the job server queue.
+[2025-05-13 16:16:36Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-05-13 16:16:36Z INFO Worker] Listening for cancel message from the channel.
+[2025-05-13 16:16:36Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-05-13 16:16:37Z INFO ResultServer] Successfully started websocket client.
+[2025-05-13 16:16:37Z INFO JobServerQueue] All queue process task stopped.
+[2025-05-13 16:16:37Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'f1a906fb-6975-4cf6-8d12-beb51b93e80f', success rate: 1/1.
+[2025-05-13 16:16:37Z INFO JobServerQueue] Web console line queue drained.
+[2025-05-13 16:16:37Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-05-13 16:16:37Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-05-13 16:16:37Z INFO JobServerQueue] File upload queue drained.
+[2025-05-13 16:16:37Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-05-13 16:16:37Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2025-05-13 16:16:37Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-13 16:16:37Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\blocks\e397db8b-7f9f-4b38-8445-f9e74d648bd3_f1a906fb-6975-4cf6-8d12-beb51b93e80f.1
+[2025-05-13 16:16:40Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-05-13 16:16:40Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\blocks\e397db8b-7f9f-4b38-8445-f9e74d648bd3_2e2ff58a-3113-58a9-a06f-b1c61be2f1ed.1
+[2025-05-13 16:16:40Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-05-13 16:16:40Z INFO JobServerQueue] Results upload queue drained.
+[2025-05-13 16:16:41Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-05-13 16:16:41Z INFO JobServerQueue] Timeline update queue drained.
+[2025-05-13 16:16:41Z INFO JobServerQueue] Disposing job server ...
+[2025-05-13 16:16:41Z INFO JobServerQueue] Disposing results server ...
+[2025-05-13 16:16:41Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-05-13 16:16:41Z INFO TempDirectoryManager] Cleaning runner temp folder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_temp
+[2025-05-13 16:16:41Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:16:41Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:16:41Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:16:41Z INFO HostContext] Well known config file 'Telemetry': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\.telemetry'
+[2025-05-13 16:16:41Z INFO JobRunner] Raising job completed against run service
+[2025-05-13 16:16:42Z INFO Worker] Job completed.
