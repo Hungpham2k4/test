@@ -39,9 +39,9 @@ jobs:
 
           Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
-            -ContentType "application/x-www-form-urlencoded" `
-            -Body @{
-            chat_id = "$env:TELEGRAM_CHAT_ID"
-            text = $message
-            parse_mode = "MarkdownV2"
-            }
+            -ContentType "application/json" `
+            -Body (@{
+              chat_id = "$env:TELEGRAM_CHAT_ID"
+              text = $message
+              parse_mode = "MarkdownV2"
+            } | ConvertTo-Json)
