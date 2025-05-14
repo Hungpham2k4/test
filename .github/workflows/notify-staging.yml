@@ -15,48 +15,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-          function Escape-MarkdownV2 {
-            param ([string]$text)
-            # Escape special characters required by MarkdownV2
-            $escapeChars = '_*[]()~`>#+-=|{}.!'
-            foreach ($char in $escapeChars.ToCharArray()) {
-                $pattern = [Regex]::Escape($char)
-                $replacement = '\\' + $char
-                $text = $text -replace $pattern, $replacement
-            }
-            # Escape backslashes last
-            $text = $text -replace '\\', '\\\\'
-            return $text
-          }
-
-=======
->>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
-          git config --global --add safe.directory "$PWD"
-
-          $commitMessage = git log -1 --pretty=format:"%s"
-          $commitHash = git log -1 --pretty=format:"%h"
-<<<<<<< HEAD
-
-          $escapedMessage = Escape-MarkdownV2 $commitMessage
-          $actor = Escape-MarkdownV2 $env:GITHUB_ACTOR
-          $repo = Escape-MarkdownV2 $env:GITHUB_REPOSITORY
-
-          $message = @"
-          🚀 *New Push to Main*
-          👤 By: $actor
-          📦 Repo: $repo
-          🔖 Commit: $commitHash
-          📝 Message: $escapedMessage
-=======
-=======
           # Lấy thông tin từ GitHub event (github.event)
->>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
-=======
-          # Lấy thông tin từ GitHub event (github.event)
->>>>>>> origin/main
           $actor = $env:GITHUB_ACTOR
           $repo = $env:GITHUB_REPOSITORY
           $commitMessage = "${{ github.event.head_commit.message }}"
@@ -71,19 +30,9 @@ jobs:
           Repo: $repo
           Commit: $commitHash
           Message: $commitMessage
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
-=======
           Changed Files:
             $changedFiles
           Link: $commitUrl
->>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
-=======
-          Changed Files:
-            $changedFiles
-          Link: $commitUrl
->>>>>>> origin/main
           "@
 
           Write-Host "Sending Telegram message:"
@@ -102,19 +51,4 @@ jobs:
             Invoke-RestMethod -Uri "https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage" `
             -Method Post `
             -ContentType "application/json" `
-<<<<<<< HEAD
-<<<<<<< HEAD
-            -Body (@{
-            chat_id = "$env:TELEGRAM_CHAT_ID"
-            text = $message
-<<<<<<< HEAD
-            parse_mode = "MarkdownV2"
-=======
->>>>>>> bc076a40b503ecf104818d902ce17853af5e3bdb
-            } | ConvertTo-Json -Depth 10)
-=======
             -Body $utf8Body
->>>>>>> a499c93364fbb2bcd58c9ea70c409644c32ec7bb
-=======
-            -Body $utf8Body
->>>>>>> origin/main

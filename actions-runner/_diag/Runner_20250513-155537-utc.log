@@ -1,0 +1,1056 @@
+[2025-05-13 15:55:37Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-13 15:55:37Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:37Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:37Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 15:55:38Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:38Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:38Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-13 15:55:38Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-05-13 15:55:38Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2025-05-13 15:55:38Z INFO Listener] Version: 2.323.0
+[2025-05-13 15:55:38Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-05-13 15:55:38Z INFO Listener] Culture: en-US
+[2025-05-13 15:55:38Z INFO Listener] UI Culture: en-US
+[2025-05-13 15:55:38Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:38Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:38Z INFO Listener] Validating directory permissions for: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:38Z INFO CommandLineParser] Parse
+[2025-05-13 15:55:38Z INFO CommandLineParser] Parsing 1 args
+[2025-05-13 15:55:38Z INFO CommandLineParser] parsing argument
+[2025-05-13 15:55:38Z INFO CommandLineParser] HasArgs: False
+[2025-05-13 15:55:38Z INFO CommandLineParser] Adding Command: run
+[2025-05-13 15:55:38Z INFO Listener] Arguments parsed
+[2025-05-13 15:55:39Z INFO Runner] ExecuteCommand
+[2025-05-13 15:55:39Z INFO ConfigurationStore] currentAssemblyLocation: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Listener.dll
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] binPath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] RootFolder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:39Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] ConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:39Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] MigratedConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:39Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] CredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:39Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] MigratedCredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:39Z INFO HostContext] Well known config file 'Service': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] ServiceConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service
+[2025-05-13 15:55:39Z INFO CommandSettings] Flag 'help': 'False'
+[2025-05-13 15:55:39Z INFO CommandSettings] Flag 'version': 'False'
+[2025-05-13 15:55:39Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-05-13 15:55:39Z INFO CommandSettings] Flag 'check': 'False'
+[2025-05-13 15:55:39Z INFO CommandSettings] Command 'configure': 'False'
+[2025-05-13 15:55:39Z INFO CommandSettings] Command 'remove': 'False'
+[2025-05-13 15:55:39Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-05-13 15:55:39Z INFO ConfigurationManager] LoadSettings
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsConfigured()
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-13 15:55:39Z INFO ConfigurationManager] Is configured: True
+[2025-05-13 15:55:39Z INFO ConfigurationStore] Read setting file: 306 chars
+[2025-05-13 15:55:39Z INFO ConfigurationManager] Settings Loaded
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-05-13 15:55:39Z INFO CommandSettings] Command 'run': 'True'
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsConfigured()
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-13 15:55:39Z INFO ConfigurationManager] Is configured: True
+[2025-05-13 15:55:39Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-05-13 15:55:39Z INFO Runner] Set runner startup type - Manual
+[2025-05-13 15:55:39Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-13 15:55:39Z INFO CommandSettings] Flag 'once': 'False'
+[2025-05-13 15:55:39Z INFO Runner] RunAsync
+[2025-05-13 15:55:39Z INFO ConfigurationManager] LoadSettings
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsConfigured()
+[2025-05-13 15:55:39Z INFO ConfigurationStore] IsConfigured: True
+[2025-05-13 15:55:39Z INFO ConfigurationManager] Is configured: True
+[2025-05-13 15:55:39Z INFO ConfigurationManager] Settings Loaded
+[2025-05-13 15:55:39Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "LAPTOP-IIRU8V1I",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/msXd7nkQ89USSZrPyml6DqYAQGPEuvHtqU8b9dELyziudQrTf1/",
+  "GitHubUrl": "https://github.com/Hungpham2k4/test",
+  "WorkFolder": "_work"
+}
+[2025-05-13 15:55:39Z INFO MessageListener] Loading Credentials
+[2025-05-13 15:55:39Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:55:39Z INFO ConfigurationStore] stored True
+[2025-05-13 15:55:39Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:55:39Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:55:39Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:39Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 15:55:39Z INFO HostContext] Well known config file 'RSACredentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams'
+[2025-05-13 15:55:39Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:39Z INFO MessageListener] Attempt to create session.
+[2025-05-13 15:55:39Z INFO MessageListener] Connecting to the Runner Server...
+[2025-05-13 15:55:39Z INFO RunnerServer] EstablishVssConnection
+[2025-05-13 15:55:39Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-05-13 15:55:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-13 15:55:39Z INFO RunnerServer] EstablishVssConnection
+[2025-05-13 15:55:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-13 15:55:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-13 15:55:39Z INFO RunnerServer] EstablishVssConnection
+[2025-05-13 15:55:39Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-05-13 15:55:39Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-05-13 15:55:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-13 15:55:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-13 15:55:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-05-13 15:55:40Z INFO MessageListener] VssConnection created
+[2025-05-13 15:55:40Z INFO Terminal] WRITE LINE: 
+[2025-05-13 15:55:41Z INFO Terminal] WRITE LINE: 
+[2025-05-13 15:55:41Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:41Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:42Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:55:42Z INFO MessageListener] Session created.
+[2025-05-13 15:55:42Z INFO Terminal] WRITE LINE: Current runner version: '2.323.0'
+[2025-05-13 15:55:42Z INFO Terminal] WRITE LINE: 2025-05-13 15:55:42Z: Listening for Jobs
+[2025-05-13 15:55:42Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-05-13 15:55:42Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:43Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:55:45Z INFO MessageListener] Message '1587601225623632418' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:55:45Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:55:45Z INFO ConfigurationStore] stored True
+[2025-05-13 15:55:45Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:55:45Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:55:45Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:55:45Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:45Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:45Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:46Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:55:48Z INFO JobDispatcher] Job request 0 for plan 98469396-936a-4c52-aca0-41f100cec073 job 43ff669d-c4df-5221-b4c9-f9913f9540f2 received.
+[2025-05-13 15:55:48Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:55:48Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:55:48Z INFO Terminal] WRITE LINE: 2025-05-13 15:55:48Z: Running job: notify
+[2025-05-13 15:55:48Z INFO JobDispatcher] Start renew job request 0 for job 43ff669d-c4df-5221-b4c9-f9913f9540f2.
+[2025-05-13 15:55:49Z INFO JobDispatcher] Successfully renew job 43ff669d-c4df-5221-b4c9-f9913f9540f2, job is valid till 5/13/2025 4:05:22 PM
+[2025-05-13 15:55:49Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2288 2300'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:55:49Z INFO ProcessInvokerWrapper] Process started with process id 24308, waiting for process exit.
+[2025-05-13 15:55:49Z INFO JobDispatcher] Send job request message to worker for job 43ff669d-c4df-5221-b4c9-f9913f9540f2.
+[2025-05-13 15:55:49Z INFO ProcessChannel] Sending message of length 38390, with hash '1d2cc918957b0f01f32d9c2eaa2a738231afab239ed700984908392648a1164c'
+[2025-05-13 15:55:49Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:55:49Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:55:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:55:58Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:55:58Z INFO ProcessInvokerWrapper] Finished process 24308 with exit code 100, and elapsed time 00:00:09.2172758.
+[2025-05-13 15:55:58Z INFO JobDispatcher] Worker finished for job 43ff669d-c4df-5221-b4c9-f9913f9540f2. Code: 100
+[2025-05-13 15:55:58Z INFO JobDispatcher] finish job request for job 43ff669d-c4df-5221-b4c9-f9913f9540f2 with result: Succeeded
+[2025-05-13 15:55:58Z INFO Terminal] WRITE LINE: 2025-05-13 15:55:58Z: Job notify completed with result: Succeeded
+[2025-05-13 15:55:58Z INFO JobDispatcher] Stop renew job request for job 43ff669d-c4df-5221-b4c9-f9913f9540f2.
+[2025-05-13 15:55:58Z INFO JobDispatcher] job renew has been cancelled, stop renew job 43ff669d-c4df-5221-b4c9-f9913f9540f2.
+[2025-05-13 15:55:58Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:55:58Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:55:58Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:55:59Z INFO MessageListener] Message '6300786824274504767' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:55:59Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:55:59Z INFO ConfigurationStore] stored True
+[2025-05-13 15:55:59Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:55:59Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:55:59Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:55:59Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:59Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:55:59Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:00Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:56:01Z INFO JobDispatcher] Job request 0 for plan 5cb9a761-dfbe-4430-bbd4-b2a3ad0a08b7 job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13 received.
+[2025-05-13 15:56:01Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:56:01Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:56:01Z INFO JobDispatcher] Job request 43ff669d-c4df-5221-b4c9-f9913f9540f2 processed succeed.
+[2025-05-13 15:56:01Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:01Z: Running job: notify
+[2025-05-13 15:56:01Z INFO JobDispatcher] Start renew job request 0 for job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13.
+[2025-05-13 15:56:02Z INFO JobDispatcher] Successfully renew job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13, job is valid till 5/13/2025 4:05:35 PM
+[2025-05-13 15:56:02Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2224 2396'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:56:02Z INFO ProcessInvokerWrapper] Process started with process id 8972, waiting for process exit.
+[2025-05-13 15:56:02Z INFO JobDispatcher] Send job request message to worker for job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13.
+[2025-05-13 15:56:02Z INFO ProcessChannel] Sending message of length 19476, with hash '385076ec023089b0587fd18b4b65076270ffed67845420f38d1c06f0c8cb3c1a'
+[2025-05-13 15:56:02Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:56:02Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:56:10Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:10Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:10Z INFO ProcessInvokerWrapper] Finished process 8972 with exit code 100, and elapsed time 00:00:08.4017913.
+[2025-05-13 15:56:10Z INFO JobDispatcher] Worker finished for job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13. Code: 100
+[2025-05-13 15:56:10Z INFO JobDispatcher] finish job request for job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13 with result: Succeeded
+[2025-05-13 15:56:10Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:10Z: Job notify completed with result: Succeeded
+[2025-05-13 15:56:10Z INFO JobDispatcher] Stop renew job request for job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13.
+[2025-05-13 15:56:10Z INFO JobDispatcher] job renew has been cancelled, stop renew job fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13.
+[2025-05-13 15:56:10Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:56:10Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:56:10Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:56:11Z INFO MessageListener] Message '6796286292560578773' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:56:11Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:56:11Z INFO ConfigurationStore] stored True
+[2025-05-13 15:56:11Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:56:11Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:56:11Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:56:11Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:11Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:11Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:12Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:56:14Z INFO JobDispatcher] Job request 0 for plan 17236561-07cc-490c-b8d0-a137f6f08b06 job dbe3d98f-df21-5130-9cc6-0e1305e92d82 received.
+[2025-05-13 15:56:14Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:56:14Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:56:14Z INFO JobDispatcher] Job request fc5a51f0-7ea8-5c51-b8e2-81d2a00c2d13 processed succeed.
+[2025-05-13 15:56:14Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:14Z: Running job: notify
+[2025-05-13 15:56:14Z INFO JobDispatcher] Start renew job request 0 for job dbe3d98f-df21-5130-9cc6-0e1305e92d82.
+[2025-05-13 15:56:14Z INFO JobDispatcher] Successfully renew job dbe3d98f-df21-5130-9cc6-0e1305e92d82, job is valid till 5/13/2025 4:05:48 PM
+[2025-05-13 15:56:14Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2364 2436'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:56:14Z INFO ProcessInvokerWrapper] Process started with process id 16424, waiting for process exit.
+[2025-05-13 15:56:14Z INFO JobDispatcher] Send job request message to worker for job dbe3d98f-df21-5130-9cc6-0e1305e92d82.
+[2025-05-13 15:56:14Z INFO ProcessChannel] Sending message of length 37207, with hash '1798e3469bc756ed71b1ec4c6d87033ab1359c8083345953c145ab9a511e1c2d'
+[2025-05-13 15:56:15Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:56:15Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:56:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:22Z INFO ProcessInvokerWrapper] Finished process 16424 with exit code 100, and elapsed time 00:00:07.9266121.
+[2025-05-13 15:56:22Z INFO JobDispatcher] Worker finished for job dbe3d98f-df21-5130-9cc6-0e1305e92d82. Code: 100
+[2025-05-13 15:56:22Z INFO JobDispatcher] finish job request for job dbe3d98f-df21-5130-9cc6-0e1305e92d82 with result: Succeeded
+[2025-05-13 15:56:22Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:22Z: Job notify completed with result: Succeeded
+[2025-05-13 15:56:22Z INFO JobDispatcher] Stop renew job request for job dbe3d98f-df21-5130-9cc6-0e1305e92d82.
+[2025-05-13 15:56:22Z INFO JobDispatcher] job renew has been cancelled, stop renew job dbe3d98f-df21-5130-9cc6-0e1305e92d82.
+[2025-05-13 15:56:22Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:56:22Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:56:22Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:56:23Z INFO MessageListener] Message '4382733436017330235' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:56:23Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:56:23Z INFO ConfigurationStore] stored True
+[2025-05-13 15:56:23Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:56:23Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:56:23Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:56:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:24Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:56:26Z INFO JobDispatcher] Job request 0 for plan f726601a-ae74-4360-b9d2-15e0eee2755b job de84f308-9ca8-51ea-be63-916e7ec9f8ef received.
+[2025-05-13 15:56:26Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:56:26Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:56:26Z INFO JobDispatcher] Job request dbe3d98f-df21-5130-9cc6-0e1305e92d82 processed succeed.
+[2025-05-13 15:56:26Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:26Z: Running job: notify
+[2025-05-13 15:56:26Z INFO JobDispatcher] Start renew job request 0 for job de84f308-9ca8-51ea-be63-916e7ec9f8ef.
+[2025-05-13 15:56:27Z INFO JobDispatcher] Successfully renew job de84f308-9ca8-51ea-be63-916e7ec9f8ef, job is valid till 5/13/2025 4:06:00 PM
+[2025-05-13 15:56:27Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2420 2416'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:56:27Z INFO ProcessInvokerWrapper] Process started with process id 20044, waiting for process exit.
+[2025-05-13 15:56:27Z INFO JobDispatcher] Send job request message to worker for job de84f308-9ca8-51ea-be63-916e7ec9f8ef.
+[2025-05-13 15:56:27Z INFO ProcessChannel] Sending message of length 38467, with hash 'f15ebade99fa2e28ccc41385d31e4907d524c3693a5792a2004d8473b27062e8'
+[2025-05-13 15:56:27Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:56:27Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:56:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:35Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:35Z INFO ProcessInvokerWrapper] Finished process 20044 with exit code 100, and elapsed time 00:00:08.2294483.
+[2025-05-13 15:56:35Z INFO JobDispatcher] Worker finished for job de84f308-9ca8-51ea-be63-916e7ec9f8ef. Code: 100
+[2025-05-13 15:56:35Z INFO JobDispatcher] finish job request for job de84f308-9ca8-51ea-be63-916e7ec9f8ef with result: Succeeded
+[2025-05-13 15:56:35Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:35Z: Job notify completed with result: Succeeded
+[2025-05-13 15:56:35Z INFO JobDispatcher] Stop renew job request for job de84f308-9ca8-51ea-be63-916e7ec9f8ef.
+[2025-05-13 15:56:35Z INFO JobDispatcher] job renew has been cancelled, stop renew job de84f308-9ca8-51ea-be63-916e7ec9f8ef.
+[2025-05-13 15:56:35Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:56:35Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:56:35Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:56:36Z INFO MessageListener] Message '7901492895788302153' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:56:36Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:56:36Z INFO ConfigurationStore] stored True
+[2025-05-13 15:56:36Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:56:36Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:56:36Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:56:36Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:36Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:36Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:37Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:56:38Z INFO JobDispatcher] Job request 0 for plan 9548215d-aa7e-4520-a73a-40ce89043de2 job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4 received.
+[2025-05-13 15:56:38Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:56:38Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:56:38Z INFO JobDispatcher] Job request de84f308-9ca8-51ea-be63-916e7ec9f8ef processed succeed.
+[2025-05-13 15:56:38Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:38Z: Running job: notify
+[2025-05-13 15:56:38Z INFO JobDispatcher] Start renew job request 0 for job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4.
+[2025-05-13 15:56:39Z INFO JobDispatcher] Successfully renew job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4, job is valid till 5/13/2025 4:06:12 PM
+[2025-05-13 15:56:39Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1524 2420'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:56:39Z INFO ProcessInvokerWrapper] Process started with process id 20312, waiting for process exit.
+[2025-05-13 15:56:39Z INFO JobDispatcher] Send job request message to worker for job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4.
+[2025-05-13 15:56:39Z INFO ProcessChannel] Sending message of length 37208, with hash '741e7235c17f9c24e4c43fb300e5a65f36f1a1cab56edba6d4bc01bbd75e588c'
+[2025-05-13 15:56:39Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:56:39Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:56:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:47Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:56:47Z INFO ProcessInvokerWrapper] Finished process 20312 with exit code 100, and elapsed time 00:00:08.3268379.
+[2025-05-13 15:56:47Z INFO JobDispatcher] Worker finished for job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4. Code: 100
+[2025-05-13 15:56:47Z INFO JobDispatcher] finish job request for job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4 with result: Succeeded
+[2025-05-13 15:56:47Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:47Z: Job notify completed with result: Succeeded
+[2025-05-13 15:56:47Z INFO JobDispatcher] Stop renew job request for job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4.
+[2025-05-13 15:56:47Z INFO JobDispatcher] job renew has been cancelled, stop renew job 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4.
+[2025-05-13 15:56:47Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:56:47Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:56:47Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:56:48Z INFO MessageListener] Message '3041923628584201440' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:56:48Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:56:48Z INFO ConfigurationStore] stored True
+[2025-05-13 15:56:48Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:56:48Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:56:48Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:56:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:56:49Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:56:51Z INFO JobDispatcher] Job request 0 for plan eb9e90f9-818e-460d-bebf-edcc867a680d job 835016ab-b8c6-589f-8c97-e7de948e3e2b received.
+[2025-05-13 15:56:51Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:56:51Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:56:51Z INFO JobDispatcher] Job request 8d750dd5-1a01-5dcc-832a-b1ecdaf6dbe4 processed succeed.
+[2025-05-13 15:56:51Z INFO Terminal] WRITE LINE: 2025-05-13 15:56:51Z: Running job: notify
+[2025-05-13 15:56:51Z INFO JobDispatcher] Start renew job request 0 for job 835016ab-b8c6-589f-8c97-e7de948e3e2b.
+[2025-05-13 15:56:52Z INFO JobDispatcher] Successfully renew job 835016ab-b8c6-589f-8c97-e7de948e3e2b, job is valid till 5/13/2025 4:06:25 PM
+[2025-05-13 15:56:52Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2260 2484'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:56:52Z INFO ProcessInvokerWrapper] Process started with process id 16668, waiting for process exit.
+[2025-05-13 15:56:52Z INFO JobDispatcher] Send job request message to worker for job 835016ab-b8c6-589f-8c97-e7de948e3e2b.
+[2025-05-13 15:56:52Z INFO ProcessChannel] Sending message of length 38466, with hash '8efa5b2e9088867861774c2dcd9bf66ce2acf539e31992fc33cfe1f03a407a0c'
+[2025-05-13 15:56:52Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:56:52Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:57:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:00Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:00Z INFO ProcessInvokerWrapper] Finished process 16668 with exit code 100, and elapsed time 00:00:08.3486961.
+[2025-05-13 15:57:00Z INFO JobDispatcher] Worker finished for job 835016ab-b8c6-589f-8c97-e7de948e3e2b. Code: 100
+[2025-05-13 15:57:00Z INFO JobDispatcher] finish job request for job 835016ab-b8c6-589f-8c97-e7de948e3e2b with result: Succeeded
+[2025-05-13 15:57:00Z INFO Terminal] WRITE LINE: 2025-05-13 15:57:00Z: Job notify completed with result: Succeeded
+[2025-05-13 15:57:00Z INFO JobDispatcher] Stop renew job request for job 835016ab-b8c6-589f-8c97-e7de948e3e2b.
+[2025-05-13 15:57:00Z INFO JobDispatcher] job renew has been cancelled, stop renew job 835016ab-b8c6-589f-8c97-e7de948e3e2b.
+[2025-05-13 15:57:00Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:57:00Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:57:00Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:57:01Z INFO MessageListener] Message '2396885528655343815' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:57:01Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:57:01Z INFO ConfigurationStore] stored True
+[2025-05-13 15:57:01Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:57:01Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:57:01Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:57:01Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:01Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:01Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:02Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:57:03Z INFO JobDispatcher] Job request 0 for plan eefe8e26-8801-426d-82dc-69dbbe2483a7 job 1ec16a9e-4248-5596-a589-20de218a24bc received.
+[2025-05-13 15:57:03Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:57:03Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:57:03Z INFO JobDispatcher] Job request 835016ab-b8c6-589f-8c97-e7de948e3e2b processed succeed.
+[2025-05-13 15:57:03Z INFO Terminal] WRITE LINE: 2025-05-13 15:57:03Z: Running job: notify
+[2025-05-13 15:57:03Z INFO JobDispatcher] Start renew job request 0 for job 1ec16a9e-4248-5596-a589-20de218a24bc.
+[2025-05-13 15:57:04Z INFO JobDispatcher] Successfully renew job 1ec16a9e-4248-5596-a589-20de218a24bc, job is valid till 5/13/2025 4:06:38 PM
+[2025-05-13 15:57:04Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2536 2224'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:57:04Z INFO ProcessInvokerWrapper] Process started with process id 6324, waiting for process exit.
+[2025-05-13 15:57:04Z INFO JobDispatcher] Send job request message to worker for job 1ec16a9e-4248-5596-a589-20de218a24bc.
+[2025-05-13 15:57:04Z INFO ProcessChannel] Sending message of length 37125, with hash '11c82c5da30cfb32631b9e7a3c213b22b3a6e29281813093cc27303c825b18f9'
+[2025-05-13 15:57:04Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:57:04Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:57:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:12Z INFO ProcessInvokerWrapper] Finished process 6324 with exit code 100, and elapsed time 00:00:08.2190338.
+[2025-05-13 15:57:12Z INFO JobDispatcher] Worker finished for job 1ec16a9e-4248-5596-a589-20de218a24bc. Code: 100
+[2025-05-13 15:57:12Z INFO JobDispatcher] finish job request for job 1ec16a9e-4248-5596-a589-20de218a24bc with result: Succeeded
+[2025-05-13 15:57:12Z INFO Terminal] WRITE LINE: 2025-05-13 15:57:12Z: Job notify completed with result: Succeeded
+[2025-05-13 15:57:12Z INFO JobDispatcher] Stop renew job request for job 1ec16a9e-4248-5596-a589-20de218a24bc.
+[2025-05-13 15:57:12Z INFO JobDispatcher] job renew has been cancelled, stop renew job 1ec16a9e-4248-5596-a589-20de218a24bc.
+[2025-05-13 15:57:12Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:57:12Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:57:12Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:57:13Z INFO MessageListener] Message '1845319859785679555' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:57:13Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:57:13Z INFO ConfigurationStore] stored True
+[2025-05-13 15:57:13Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:57:13Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:57:13Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:57:13Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:13Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:13Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:15Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:57:16Z INFO JobDispatcher] Job request 0 for plan b1fefd12-5642-44ea-af8d-a36fdd847467 job e458bd21-b9d8-5276-a221-b4e8459182a4 received.
+[2025-05-13 15:57:16Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:57:16Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:57:16Z INFO JobDispatcher] Job request 1ec16a9e-4248-5596-a589-20de218a24bc processed succeed.
+[2025-05-13 15:57:16Z INFO Terminal] WRITE LINE: 2025-05-13 15:57:16Z: Running job: notify
+[2025-05-13 15:57:16Z INFO JobDispatcher] Start renew job request 0 for job e458bd21-b9d8-5276-a221-b4e8459182a4.
+[2025-05-13 15:57:17Z INFO JobDispatcher] Successfully renew job e458bd21-b9d8-5276-a221-b4e8459182a4, job is valid till 5/13/2025 4:06:50 PM
+[2025-05-13 15:57:17Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2472 2468'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:57:17Z INFO ProcessInvokerWrapper] Process started with process id 7340, waiting for process exit.
+[2025-05-13 15:57:17Z INFO JobDispatcher] Send job request message to worker for job e458bd21-b9d8-5276-a221-b4e8459182a4.
+[2025-05-13 15:57:17Z INFO ProcessChannel] Sending message of length 22132, with hash '43c27f9823debb42d2ab4236eea1e7ede66113df2f82153dcac2d0bc245fff58'
+[2025-05-13 15:57:17Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:57:17Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:57:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:25Z INFO ProcessInvokerWrapper] Finished process 7340 with exit code 100, and elapsed time 00:00:08.1510873.
+[2025-05-13 15:57:25Z INFO JobDispatcher] Worker finished for job e458bd21-b9d8-5276-a221-b4e8459182a4. Code: 100
+[2025-05-13 15:57:25Z INFO JobDispatcher] finish job request for job e458bd21-b9d8-5276-a221-b4e8459182a4 with result: Succeeded
+[2025-05-13 15:57:25Z INFO Terminal] WRITE LINE: 2025-05-13 15:57:25Z: Job notify completed with result: Succeeded
+[2025-05-13 15:57:25Z INFO JobDispatcher] Stop renew job request for job e458bd21-b9d8-5276-a221-b4e8459182a4.
+[2025-05-13 15:57:25Z INFO JobDispatcher] job renew has been cancelled, stop renew job e458bd21-b9d8-5276-a221-b4e8459182a4.
+[2025-05-13 15:57:25Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:57:25Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:57:25Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:57:26Z INFO MessageListener] Message '5098477490285519425' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:57:26Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:57:26Z INFO ConfigurationStore] stored True
+[2025-05-13 15:57:26Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:57:26Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:57:26Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:57:26Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:26Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:26Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:57:27Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:57:28Z INFO JobDispatcher] Job request 0 for plan 19f77dc9-374d-4f4e-b1ed-315d712c06eb job 15c61bbd-b4f9-501e-b65d-c95165f73c12 received.
+[2025-05-13 15:57:28Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:57:28Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:57:28Z INFO JobDispatcher] Job request e458bd21-b9d8-5276-a221-b4e8459182a4 processed succeed.
+[2025-05-13 15:57:28Z INFO Terminal] WRITE LINE: 2025-05-13 15:57:28Z: Running job: notify
+[2025-05-13 15:57:28Z INFO JobDispatcher] Start renew job request 0 for job 15c61bbd-b4f9-501e-b65d-c95165f73c12.
+[2025-05-13 15:57:29Z INFO JobDispatcher] Successfully renew job 15c61bbd-b4f9-501e-b65d-c95165f73c12, job is valid till 5/13/2025 4:07:03 PM
+[2025-05-13 15:57:29Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1648 2292'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:57:29Z INFO ProcessInvokerWrapper] Process started with process id 3604, waiting for process exit.
+[2025-05-13 15:57:29Z INFO JobDispatcher] Send job request message to worker for job 15c61bbd-b4f9-501e-b65d-c95165f73c12.
+[2025-05-13 15:57:29Z INFO ProcessChannel] Sending message of length 38385, with hash '4460a3b546aa7b7934da7a4384284e56772bcb8c1ccbbe7e8f6541f2127d779e'
+[2025-05-13 15:57:29Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:57:29Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:57:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:37Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:57:37Z INFO ProcessInvokerWrapper] Finished process 3604 with exit code 100, and elapsed time 00:00:08.0240711.
+[2025-05-13 15:57:37Z INFO JobDispatcher] Worker finished for job 15c61bbd-b4f9-501e-b65d-c95165f73c12. Code: 100
+[2025-05-13 15:57:37Z INFO JobDispatcher] finish job request for job 15c61bbd-b4f9-501e-b65d-c95165f73c12 with result: Succeeded
+[2025-05-13 15:57:37Z INFO Terminal] WRITE LINE: 2025-05-13 15:57:37Z: Job notify completed with result: Succeeded
+[2025-05-13 15:57:37Z INFO JobDispatcher] Stop renew job request for job 15c61bbd-b4f9-501e-b65d-c95165f73c12.
+[2025-05-13 15:57:37Z INFO JobDispatcher] job renew has been cancelled, stop renew job 15c61bbd-b4f9-501e-b65d-c95165f73c12.
+[2025-05-13 15:57:37Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:57:37Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:57:37Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 15:58:03Z INFO MessageListener] Message '4684485632428146163' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 15:58:03Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 15:58:03Z INFO ConfigurationStore] stored True
+[2025-05-13 15:58:03Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 15:58:03Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 15:58:03Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 15:58:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:58:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:58:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 15:58:03Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 15:58:05Z INFO JobDispatcher] Job request 0 for plan 5a8cd774-abbc-4411-aa47-ac1b1a1a4f38 job f9403e47-e022-5d04-b53d-5905a525f9a3 received.
+[2025-05-13 15:58:05Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 15:58:05Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 15:58:05Z INFO JobDispatcher] Job request 15c61bbd-b4f9-501e-b65d-c95165f73c12 processed succeed.
+[2025-05-13 15:58:05Z INFO Terminal] WRITE LINE: 2025-05-13 15:58:05Z: Running job: notify
+[2025-05-13 15:58:05Z INFO JobDispatcher] Start renew job request 0 for job f9403e47-e022-5d04-b53d-5905a525f9a3.
+[2025-05-13 15:58:06Z INFO JobDispatcher] Successfully renew job f9403e47-e022-5d04-b53d-5905a525f9a3, job is valid till 5/13/2025 4:07:39 PM
+[2025-05-13 15:58:06Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2456 2416'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 15:58:06Z INFO ProcessInvokerWrapper] Process started with process id 20112, waiting for process exit.
+[2025-05-13 15:58:06Z INFO JobDispatcher] Send job request message to worker for job f9403e47-e022-5d04-b53d-5905a525f9a3.
+[2025-05-13 15:58:06Z INFO ProcessChannel] Sending message of length 20334, with hash 'ad81c08f8b5b966be546fa6d03ba4f110565c3eca672321ec982c0c788135936'
+[2025-05-13 15:58:06Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 15:58:06Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 15:58:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:58:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 15:58:14Z INFO ProcessInvokerWrapper] Finished process 20112 with exit code 100, and elapsed time 00:00:08.3218804.
+[2025-05-13 15:58:14Z INFO JobDispatcher] Worker finished for job f9403e47-e022-5d04-b53d-5905a525f9a3. Code: 100
+[2025-05-13 15:58:14Z INFO JobDispatcher] finish job request for job f9403e47-e022-5d04-b53d-5905a525f9a3 with result: Succeeded
+[2025-05-13 15:58:14Z INFO Terminal] WRITE LINE: 2025-05-13 15:58:14Z: Job notify completed with result: Succeeded
+[2025-05-13 15:58:14Z INFO JobDispatcher] Stop renew job request for job f9403e47-e022-5d04-b53d-5905a525f9a3.
+[2025-05-13 15:58:14Z INFO JobDispatcher] job renew has been cancelled, stop renew job f9403e47-e022-5d04-b53d-5905a525f9a3.
+[2025-05-13 15:58:14Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 15:58:14Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 15:58:14Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:03:04Z INFO MessageListener] Message '5143956722399509990' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:03:04Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:03:04Z INFO ConfigurationStore] stored True
+[2025-05-13 16:03:04Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:03:04Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:03:04Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:03:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:03:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:03:04Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:03:05Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:03:07Z INFO JobDispatcher] Job request 0 for plan 0c36c728-e8d1-407a-98d7-76ccc6357748 job ea436cab-a3d5-5a30-82b0-574af9f56b87 received.
+[2025-05-13 16:03:07Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:03:07Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:03:07Z INFO JobDispatcher] Job request f9403e47-e022-5d04-b53d-5905a525f9a3 processed succeed.
+[2025-05-13 16:03:07Z INFO Terminal] WRITE LINE: 2025-05-13 16:03:07Z: Running job: notify
+[2025-05-13 16:03:07Z INFO JobDispatcher] Start renew job request 0 for job ea436cab-a3d5-5a30-82b0-574af9f56b87.
+[2025-05-13 16:03:07Z INFO JobDispatcher] Successfully renew job ea436cab-a3d5-5a30-82b0-574af9f56b87, job is valid till 5/13/2025 4:12:41 PM
+[2025-05-13 16:03:07Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1604 2232'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:03:07Z INFO ProcessInvokerWrapper] Process started with process id 23288, waiting for process exit.
+[2025-05-13 16:03:07Z INFO JobDispatcher] Send job request message to worker for job ea436cab-a3d5-5a30-82b0-574af9f56b87.
+[2025-05-13 16:03:07Z INFO ProcessChannel] Sending message of length 19635, with hash 'af566bc68c937c2466c376f31043867cb7bf8bd34639c1800159c15aaf7b4f32'
+[2025-05-13 16:03:08Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:03:08Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:03:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:03:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:03:13Z INFO ProcessInvokerWrapper] Finished process 23288 with exit code 102, and elapsed time 00:00:05.5727193.
+[2025-05-13 16:03:13Z INFO JobDispatcher] Worker finished for job ea436cab-a3d5-5a30-82b0-574af9f56b87. Code: 102
+[2025-05-13 16:03:13Z INFO JobDispatcher] finish job request for job ea436cab-a3d5-5a30-82b0-574af9f56b87 with result: Failed
+[2025-05-13 16:03:13Z INFO Terminal] WRITE LINE: 2025-05-13 16:03:13Z: Job notify completed with result: Failed
+[2025-05-13 16:03:13Z INFO JobDispatcher] Stop renew job request for job ea436cab-a3d5-5a30-82b0-574af9f56b87.
+[2025-05-13 16:03:13Z INFO JobDispatcher] job renew has been cancelled, stop renew job ea436cab-a3d5-5a30-82b0-574af9f56b87.
+[2025-05-13 16:03:13Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:03:13Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:03:13Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:03:14Z INFO MessageListener] Message '4555974666962244533' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:03:14Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:03:14Z INFO ConfigurationStore] stored True
+[2025-05-13 16:03:14Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:03:14Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:03:14Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:03:14Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:03:14Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:03:14Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:03:15Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:03:16Z INFO JobDispatcher] Job request 0 for plan 0b42bdaf-f08e-42ac-9581-101ad1e2c5fc job f5f328cd-8418-56d3-8534-f5fdc515aa88 received.
+[2025-05-13 16:03:16Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:03:16Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:03:16Z INFO JobDispatcher] Job request ea436cab-a3d5-5a30-82b0-574af9f56b87 processed succeed.
+[2025-05-13 16:03:16Z INFO Terminal] WRITE LINE: 2025-05-13 16:03:16Z: Running job: notify
+[2025-05-13 16:03:16Z INFO JobDispatcher] Start renew job request 0 for job f5f328cd-8418-56d3-8534-f5fdc515aa88.
+[2025-05-13 16:03:17Z INFO JobDispatcher] Successfully renew job f5f328cd-8418-56d3-8534-f5fdc515aa88, job is valid till 5/13/2025 4:12:50 PM
+[2025-05-13 16:03:17Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2444 1796'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:03:17Z INFO ProcessInvokerWrapper] Process started with process id 18196, waiting for process exit.
+[2025-05-13 16:03:17Z INFO JobDispatcher] Send job request message to worker for job f5f328cd-8418-56d3-8534-f5fdc515aa88.
+[2025-05-13 16:03:17Z INFO ProcessChannel] Sending message of length 19338, with hash 'ddee830aa9810fbf91b1542c84f6bbfb36064eb5efe221707125b853bba825c1'
+[2025-05-13 16:03:17Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:03:17Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:03:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:03:25Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:03:25Z INFO ProcessInvokerWrapper] Finished process 18196 with exit code 100, and elapsed time 00:00:08.5704701.
+[2025-05-13 16:03:25Z INFO JobDispatcher] Worker finished for job f5f328cd-8418-56d3-8534-f5fdc515aa88. Code: 100
+[2025-05-13 16:03:25Z INFO JobDispatcher] finish job request for job f5f328cd-8418-56d3-8534-f5fdc515aa88 with result: Succeeded
+[2025-05-13 16:03:25Z INFO Terminal] WRITE LINE: 2025-05-13 16:03:25Z: Job notify completed with result: Succeeded
+[2025-05-13 16:03:25Z INFO JobDispatcher] Stop renew job request for job f5f328cd-8418-56d3-8534-f5fdc515aa88.
+[2025-05-13 16:03:25Z INFO JobDispatcher] job renew has been cancelled, stop renew job f5f328cd-8418-56d3-8534-f5fdc515aa88.
+[2025-05-13 16:03:25Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:03:25Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:03:25Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:04:10Z INFO MessageListener] Message '8189360931880861198' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:04:10Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:04:10Z INFO ConfigurationStore] stored True
+[2025-05-13 16:04:10Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:04:10Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:04:10Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:04:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:11Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:04:12Z INFO JobDispatcher] Job request 0 for plan 044466f5-81bb-4de5-b41f-046946e1d713 job e953e261-e7c9-5ccb-a223-cdf0cc0ac101 received.
+[2025-05-13 16:04:12Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:04:12Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:04:12Z INFO JobDispatcher] Job request f5f328cd-8418-56d3-8534-f5fdc515aa88 processed succeed.
+[2025-05-13 16:04:12Z INFO Terminal] WRITE LINE: 2025-05-13 16:04:12Z: Running job: notify
+[2025-05-13 16:04:12Z INFO JobDispatcher] Start renew job request 0 for job e953e261-e7c9-5ccb-a223-cdf0cc0ac101.
+[2025-05-13 16:04:13Z INFO JobDispatcher] Successfully renew job e953e261-e7c9-5ccb-a223-cdf0cc0ac101, job is valid till 5/13/2025 4:13:46 PM
+[2025-05-13 16:04:13Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2620 1592'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:04:13Z INFO ProcessInvokerWrapper] Process started with process id 2588, waiting for process exit.
+[2025-05-13 16:04:13Z INFO JobDispatcher] Send job request message to worker for job e953e261-e7c9-5ccb-a223-cdf0cc0ac101.
+[2025-05-13 16:04:13Z INFO ProcessChannel] Sending message of length 19649, with hash '4f6ad291a20731dac411b2603cda6a53eee31da2fc36cecd19f2d2cb5768714e'
+[2025-05-13 16:04:13Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:04:13Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:04:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:04:21Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:04:21Z INFO ProcessInvokerWrapper] Finished process 2588 with exit code 100, and elapsed time 00:00:08.0043028.
+[2025-05-13 16:04:21Z INFO JobDispatcher] Worker finished for job e953e261-e7c9-5ccb-a223-cdf0cc0ac101. Code: 100
+[2025-05-13 16:04:21Z INFO JobDispatcher] finish job request for job e953e261-e7c9-5ccb-a223-cdf0cc0ac101 with result: Succeeded
+[2025-05-13 16:04:21Z INFO Terminal] WRITE LINE: 2025-05-13 16:04:21Z: Job notify completed with result: Succeeded
+[2025-05-13 16:04:21Z INFO JobDispatcher] Stop renew job request for job e953e261-e7c9-5ccb-a223-cdf0cc0ac101.
+[2025-05-13 16:04:21Z INFO JobDispatcher] job renew has been cancelled, stop renew job e953e261-e7c9-5ccb-a223-cdf0cc0ac101.
+[2025-05-13 16:04:21Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:04:21Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:04:21Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:04:44Z INFO MessageListener] Message '1534561269145293401' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:04:44Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:04:44Z INFO ConfigurationStore] stored True
+[2025-05-13 16:04:44Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:04:44Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:04:44Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:04:44Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:44Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:44Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:45Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:04:47Z INFO JobDispatcher] Job request 0 for plan d697177b-2ecc-405d-b51b-d8c40c8f28e9 job 77d71b90-dc47-5304-99eb-14b58083b248 received.
+[2025-05-13 16:04:47Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:04:47Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:04:47Z INFO JobDispatcher] Job request e953e261-e7c9-5ccb-a223-cdf0cc0ac101 processed succeed.
+[2025-05-13 16:04:47Z INFO Terminal] WRITE LINE: 2025-05-13 16:04:47Z: Running job: notify
+[2025-05-13 16:04:47Z INFO JobDispatcher] Start renew job request 0 for job 77d71b90-dc47-5304-99eb-14b58083b248.
+[2025-05-13 16:04:47Z INFO JobDispatcher] Successfully renew job 77d71b90-dc47-5304-99eb-14b58083b248, job is valid till 5/13/2025 4:14:21 PM
+[2025-05-13 16:04:47Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1316 2540'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:04:47Z INFO ProcessInvokerWrapper] Process started with process id 7520, waiting for process exit.
+[2025-05-13 16:04:47Z INFO JobDispatcher] Send job request message to worker for job 77d71b90-dc47-5304-99eb-14b58083b248.
+[2025-05-13 16:04:47Z INFO ProcessChannel] Sending message of length 20298, with hash 'abad8008e2fe32085a2c63cd6b9b2742b8c3ef79be108f1b4c699b83420cbab5'
+[2025-05-13 16:04:48Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:04:48Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:04:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:04:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:04:55Z INFO ProcessInvokerWrapper] Finished process 7520 with exit code 100, and elapsed time 00:00:07.8668221.
+[2025-05-13 16:04:55Z INFO JobDispatcher] Worker finished for job 77d71b90-dc47-5304-99eb-14b58083b248. Code: 100
+[2025-05-13 16:04:55Z INFO JobDispatcher] finish job request for job 77d71b90-dc47-5304-99eb-14b58083b248 with result: Succeeded
+[2025-05-13 16:04:55Z INFO Terminal] WRITE LINE: 2025-05-13 16:04:55Z: Job notify completed with result: Succeeded
+[2025-05-13 16:04:55Z INFO JobDispatcher] Stop renew job request for job 77d71b90-dc47-5304-99eb-14b58083b248.
+[2025-05-13 16:04:55Z INFO JobDispatcher] job renew has been cancelled, stop renew job 77d71b90-dc47-5304-99eb-14b58083b248.
+[2025-05-13 16:04:55Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:04:55Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:04:55Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:04:56Z INFO MessageListener] Message '8726028483882642984' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:04:56Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:04:56Z INFO ConfigurationStore] stored True
+[2025-05-13 16:04:56Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:04:56Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:04:56Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:04:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:04:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:04:58Z INFO JobDispatcher] Job request 0 for plan a1eaf607-7b03-45a8-b2f5-98fc98f03ce1 job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f received.
+[2025-05-13 16:04:58Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:04:58Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:04:58Z INFO JobDispatcher] Job request 77d71b90-dc47-5304-99eb-14b58083b248 processed succeed.
+[2025-05-13 16:04:58Z INFO Terminal] WRITE LINE: 2025-05-13 16:04:58Z: Running job: notify
+[2025-05-13 16:04:58Z INFO JobDispatcher] Start renew job request 0 for job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f.
+[2025-05-13 16:04:59Z INFO JobDispatcher] Successfully renew job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f, job is valid till 5/13/2025 4:14:32 PM
+[2025-05-13 16:04:59Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1480 1616'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:04:59Z INFO ProcessInvokerWrapper] Process started with process id 23076, waiting for process exit.
+[2025-05-13 16:04:59Z INFO JobDispatcher] Send job request message to worker for job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f.
+[2025-05-13 16:04:59Z INFO ProcessChannel] Sending message of length 20000, with hash '43686b7464bee7c9e5d0591aadf09e5bcb9c1ccdb04ac577a82d456c0fb068c6'
+[2025-05-13 16:04:59Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:04:59Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:05:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:05:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:05:08Z INFO ProcessInvokerWrapper] Finished process 23076 with exit code 100, and elapsed time 00:00:08.7242826.
+[2025-05-13 16:05:08Z INFO JobDispatcher] Worker finished for job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f. Code: 100
+[2025-05-13 16:05:08Z INFO JobDispatcher] finish job request for job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f with result: Succeeded
+[2025-05-13 16:05:08Z INFO Terminal] WRITE LINE: 2025-05-13 16:05:08Z: Job notify completed with result: Succeeded
+[2025-05-13 16:05:08Z INFO JobDispatcher] Stop renew job request for job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f.
+[2025-05-13 16:05:08Z INFO JobDispatcher] job renew has been cancelled, stop renew job 140eba2f-6711-5bd2-baf0-ac5e4a3d595f.
+[2025-05-13 16:05:08Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:05:08Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:05:08Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:05:24Z INFO MessageListener] Message '2662806173142194798' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:05:24Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:05:24Z INFO ConfigurationStore] stored True
+[2025-05-13 16:05:24Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:05:24Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:05:24Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:05:24Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:24Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:24Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:27Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:05:27Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (2.5271085 seconds)
+[2025-05-13 16:05:28Z INFO JobDispatcher] Job request 0 for plan 24aed636-bba1-442a-820a-500058216b5f job 1aef39a6-2f1d-5aff-96e4-913c1130b783 received.
+[2025-05-13 16:05:28Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:05:28Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:05:28Z INFO JobDispatcher] Job request 140eba2f-6711-5bd2-baf0-ac5e4a3d595f processed succeed.
+[2025-05-13 16:05:28Z INFO Terminal] WRITE LINE: 2025-05-13 16:05:28Z: Running job: notify
+[2025-05-13 16:05:28Z INFO JobDispatcher] Start renew job request 0 for job 1aef39a6-2f1d-5aff-96e4-913c1130b783.
+[2025-05-13 16:05:29Z INFO JobDispatcher] Successfully renew job 1aef39a6-2f1d-5aff-96e4-913c1130b783, job is valid till 5/13/2025 4:15:03 PM
+[2025-05-13 16:05:29Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1536 2232'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:05:29Z INFO ProcessInvokerWrapper] Process started with process id 16496, waiting for process exit.
+[2025-05-13 16:05:29Z INFO JobDispatcher] Send job request message to worker for job 1aef39a6-2f1d-5aff-96e4-913c1130b783.
+[2025-05-13 16:05:29Z INFO ProcessChannel] Sending message of length 37207, with hash '4c58051b0b13fec862993e7e8b4b70a2a933da3cd0aa69351b110d1b1c889736'
+[2025-05-13 16:05:33Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:05:33Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:05:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:05:41Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:05:41Z INFO ProcessInvokerWrapper] Finished process 16496 with exit code 100, and elapsed time 00:00:11.8171069.
+[2025-05-13 16:05:41Z INFO JobDispatcher] Worker finished for job 1aef39a6-2f1d-5aff-96e4-913c1130b783. Code: 100
+[2025-05-13 16:05:41Z INFO JobDispatcher] finish job request for job 1aef39a6-2f1d-5aff-96e4-913c1130b783 with result: Succeeded
+[2025-05-13 16:05:41Z INFO Terminal] WRITE LINE: 2025-05-13 16:05:41Z: Job notify completed with result: Succeeded
+[2025-05-13 16:05:41Z INFO JobDispatcher] Stop renew job request for job 1aef39a6-2f1d-5aff-96e4-913c1130b783.
+[2025-05-13 16:05:41Z INFO JobDispatcher] job renew has been cancelled, stop renew job 1aef39a6-2f1d-5aff-96e4-913c1130b783.
+[2025-05-13 16:05:41Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:05:41Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:05:41Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:05:43Z INFO MessageListener] Message '3563524199202645228' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:05:43Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:05:43Z INFO ConfigurationStore] stored True
+[2025-05-13 16:05:43Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:05:43Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:05:43Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:05:43Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:43Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:43Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:05:46Z INFO JobDispatcher] Job request 0 for plan e5d9bef2-22d2-42fb-995d-c87505f03cef job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29 received.
+[2025-05-13 16:05:46Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:05:46Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:05:46Z INFO JobDispatcher] Job request 1aef39a6-2f1d-5aff-96e4-913c1130b783 processed succeed.
+[2025-05-13 16:05:46Z INFO Terminal] WRITE LINE: 2025-05-13 16:05:46Z: Running job: notify
+[2025-05-13 16:05:46Z INFO JobDispatcher] Start renew job request 0 for job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29.
+[2025-05-13 16:05:47Z INFO JobDispatcher] Successfully renew job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29, job is valid till 5/13/2025 4:15:21 PM
+[2025-05-13 16:05:47Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2552 2380'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:05:47Z INFO ProcessInvokerWrapper] Process started with process id 19008, waiting for process exit.
+[2025-05-13 16:05:47Z INFO JobDispatcher] Send job request message to worker for job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29.
+[2025-05-13 16:05:47Z INFO ProcessChannel] Sending message of length 20535, with hash 'c59134e0c859c9d3bc0443570db5e7fae6341cf3d3d2ce8388fa7924f83ac8d5'
+[2025-05-13 16:05:47Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:05:47Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:05:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:05:55Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:05:55Z INFO ProcessInvokerWrapper] Finished process 19008 with exit code 100, and elapsed time 00:00:08.1636396.
+[2025-05-13 16:05:55Z INFO JobDispatcher] Worker finished for job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29. Code: 100
+[2025-05-13 16:05:55Z INFO JobDispatcher] finish job request for job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29 with result: Succeeded
+[2025-05-13 16:05:55Z INFO Terminal] WRITE LINE: 2025-05-13 16:05:55Z: Job notify completed with result: Succeeded
+[2025-05-13 16:05:55Z INFO JobDispatcher] Stop renew job request for job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29.
+[2025-05-13 16:05:55Z INFO JobDispatcher] job renew has been cancelled, stop renew job d4ec2d1d-e0e0-52a9-9522-d1f18d167f29.
+[2025-05-13 16:05:55Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:05:55Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:05:55Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:05:56Z INFO MessageListener] Message '4537103048300260690' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:05:56Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:05:56Z INFO ConfigurationStore] stored True
+[2025-05-13 16:05:56Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:05:56Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:05:56Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:05:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:56Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:05:57Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:06:00Z INFO JobDispatcher] Job request 0 for plan d32782f4-4eb3-4dc2-bbdd-512378e200e8 job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f received.
+[2025-05-13 16:06:00Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:06:00Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:06:00Z INFO JobDispatcher] Job request d4ec2d1d-e0e0-52a9-9522-d1f18d167f29 processed succeed.
+[2025-05-13 16:06:00Z INFO Terminal] WRITE LINE: 2025-05-13 16:06:00Z: Running job: notify
+[2025-05-13 16:06:00Z INFO JobDispatcher] Start renew job request 0 for job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f.
+[2025-05-13 16:06:01Z INFO JobDispatcher] Successfully renew job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f, job is valid till 5/13/2025 4:15:34 PM
+[2025-05-13 16:06:01Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2588 2636'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:06:01Z INFO ProcessInvokerWrapper] Process started with process id 16524, waiting for process exit.
+[2025-05-13 16:06:01Z INFO JobDispatcher] Send job request message to worker for job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f.
+[2025-05-13 16:06:01Z INFO ProcessChannel] Sending message of length 20238, with hash '5cb736f68fd13b2a1eaf07ef5d43d9636279c7b8b988a2dbe800aa187b04c615'
+[2025-05-13 16:06:01Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:06:01Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:06:10Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:06:10Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:06:10Z INFO ProcessInvokerWrapper] Finished process 16524 with exit code 100, and elapsed time 00:00:09.1816233.
+[2025-05-13 16:06:10Z INFO JobDispatcher] Worker finished for job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f. Code: 100
+[2025-05-13 16:06:10Z INFO JobDispatcher] finish job request for job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f with result: Succeeded
+[2025-05-13 16:06:10Z INFO Terminal] WRITE LINE: 2025-05-13 16:06:10Z: Job notify completed with result: Succeeded
+[2025-05-13 16:06:10Z INFO JobDispatcher] Stop renew job request for job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f.
+[2025-05-13 16:06:10Z INFO JobDispatcher] job renew has been cancelled, stop renew job 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f.
+[2025-05-13 16:06:10Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:06:10Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:06:10Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:06:11Z INFO MessageListener] Message '8757708799531539121' received from session 'ac8ff568-976e-4d90-92ef-c98ad23c1082'.
+[2025-05-13 16:06:11Z INFO ConfigurationStore] HasCredentials()
+[2025-05-13 16:06:11Z INFO ConfigurationStore] stored True
+[2025-05-13 16:06:11Z INFO CredentialManager] GetCredentialProvider
+[2025-05-13 16:06:11Z INFO CredentialManager] Creating type OAuth
+[2025-05-13 16:06:11Z INFO CredentialManager] Creating credential type: OAuth
+[2025-05-13 16:06:11Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:06:11Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:06:11Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_rsaparams
+[2025-05-13 16:06:12Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-05-13 16:06:22Z INFO JobDispatcher] Job request 0 for plan 73cdfec7-6b3d-4fb6-8ca5-27c60d0fabc7 job ae083b03-cada-5cbd-b0da-61f80ff40063 received.
+[2025-05-13 16:06:22Z INFO MessageListener] Received job status event. JobState: Busy
+[2025-05-13 16:06:22Z INFO MessageListener] _getMessagesTokenSource is already disposed.
+[2025-05-13 16:06:22Z INFO JobDispatcher] Job request 4ae6ede3-edbb-5e81-8ade-a51ef45e6e0f processed succeed.
+[2025-05-13 16:06:22Z INFO Terminal] WRITE LINE: 2025-05-13 16:06:22Z: Running job: notify
+[2025-05-13 16:06:22Z INFO JobDispatcher] Start renew job request 0 for job ae083b03-cada-5cbd-b0da-61f80ff40063.
+[2025-05-13 16:06:23Z INFO JobDispatcher] Successfully renew job ae083b03-cada-5cbd-b0da-61f80ff40063, job is valid till 5/13/2025 4:15:56 PM
+[2025-05-13 16:06:23Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper] Starting process:
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   File name: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.exe'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2428 2628'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Working directory: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2025-05-13 16:06:23Z INFO ProcessInvokerWrapper] Process started with process id 12352, waiting for process exit.
+[2025-05-13 16:06:23Z INFO JobDispatcher] Send job request message to worker for job ae083b03-cada-5cbd-b0da-61f80ff40063.
+[2025-05-13 16:06:23Z INFO ProcessChannel] Sending message of length 38389, with hash '9899cf28b492322fc11e31a705776219d2a01e902cd6c5543fbcbd2ad357307b'
+[2025-05-13 16:06:23Z INFO JobNotification] Entering JobStarted Notification
+[2025-05-13 16:06:23Z INFO JobNotification] Entering StartMonitor
+[2025-05-13 16:06:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:06:32Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2025-05-13 16:06:32Z INFO ProcessInvokerWrapper] Finished process 12352 with exit code 100, and elapsed time 00:00:08.5354448.
+[2025-05-13 16:06:32Z INFO JobDispatcher] Worker finished for job ae083b03-cada-5cbd-b0da-61f80ff40063. Code: 100
+[2025-05-13 16:06:32Z INFO JobDispatcher] finish job request for job ae083b03-cada-5cbd-b0da-61f80ff40063 with result: Succeeded
+[2025-05-13 16:06:32Z INFO Terminal] WRITE LINE: 2025-05-13 16:06:32Z: Job notify completed with result: Succeeded
+[2025-05-13 16:06:32Z INFO JobDispatcher] Stop renew job request for job ae083b03-cada-5cbd-b0da-61f80ff40063.
+[2025-05-13 16:06:32Z INFO JobDispatcher] job renew has been cancelled, stop renew job ae083b03-cada-5cbd-b0da-61f80ff40063.
+[2025-05-13 16:06:32Z INFO JobNotification] Entering JobCompleted Notification
+[2025-05-13 16:06:32Z INFO JobNotification] Entering EndMonitor
+[2025-05-13 16:06:32Z INFO MessageListener] Received job status event. JobState: Online
+[2025-05-13 16:08:05Z INFO Terminal] WRITE LINE: Exiting...
+[2025-05-13 16:08:05Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-05-13 16:08:05Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-05-13 16:08:05Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2025-05-13 16:08:05Z WARN GitHubActionsService] GET request to https://broker.actions.githubusercontent.com/message?sessionId=ac8ff568-976e-4d90-92ef-c98ad23c1082&status=Online&runnerVersion=2.323.0&os=Windows&architecture=X64&disableUpdate=false has been cancelled.
+[2025-05-13 16:08:05Z ERR  BrokerServer] Catch exception during request
+[2025-05-13 16:08:05Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpClient.HandleFailure(Exception e, Boolean telemetryStarted, HttpResponseMessage response, CancellationTokenSource cts, CancellationToken cancellationToken, CancellationTokenSource pendingRequestsCts)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpRequestMessage message, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at Sdk.WebApi.WebApi.RawHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Uri requestUri, HttpContent content, IEnumerable`1 queryParameters, Boolean readErrorBody, Object userState, CancellationToken cancellationToken)
+   at GitHub.Actions.RunService.WebApi.BrokerHttpClient.GetRunnerMessageAsync(Nullable`1 sessionId, String runnerVersion, Nullable`1 status, String os, String architecture, Nullable`1 disableUpdate, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.BrokerServer.<>c__DisplayClass7_0.<<GetRunnerMessageAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at GitHub.Runner.Common.RunnerService.RetryRequest[T](Func`1 func, CancellationToken cancellationToken, Int32 maxRetryAttemptsCount, Func`2 shouldRetry)
+[2025-05-13 16:08:05Z ERR  BrokerServer] #####################################################
+[2025-05-13 16:08:05Z ERR  BrokerServer] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.RawHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+[2025-05-13 16:08:05Z ERR  BrokerServer] #####################################################
+[2025-05-13 16:08:05Z ERR  BrokerServer] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2025-05-13 16:08:05Z ERR  BrokerServer] #####################################################
+[2025-05-13 16:08:05Z ERR  BrokerServer] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2025-05-13 16:08:05Z WARN BrokerServer] Back off 12.254 seconds before next retry. 4 attempt left.
+[2025-05-13 16:08:05Z INFO MessageListener] Get next message has been cancelled.
+[2025-05-13 16:08:05Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2025-05-13 16:08:05Z INFO JobDispatcher] Ensure WorkerDispatcher for job ae083b03-cada-5cbd-b0da-61f80ff40063 run to finish, cancel any running job.
+[2025-05-13 16:08:05Z INFO JobDispatcher] Job request ae083b03-cada-5cbd-b0da-61f80ff40063 processed succeed.
+[2025-05-13 16:08:05Z INFO Runner] Deleting Runner Session...
+[2025-05-13 16:08:06Z INFO Listener] Runner execution been cancelled.
