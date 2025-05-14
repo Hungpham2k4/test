@@ -3,9 +3,9 @@ Hello 2
 hello 3
 hello 4
 hello 5
-<<<<<<< HEAD
+ HEAD
 hello 6
-=======
+
 hello 6
 hello main - 03
->>>>>>> origin/main
+ origin/main
