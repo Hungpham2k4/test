@@ -3,13 +3,17 @@ Hello 2
 hello 3
 hello 4
 hello 5
-<<<<<<< HEAD
+ HEAD
 hello 6
-=======
+
 hello 6
 hello main - 03
->>>>>>> origin/main
+ test_push_request
+ origin/main
+
+ origin/main
 "hello12" 
 "hello13" 
 "haha1" 
 "hadha" 
+ main
