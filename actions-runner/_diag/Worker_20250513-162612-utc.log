@@ -1,0 +1,1358 @@
+[2025-05-13 16:26:12Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-13 16:26:12Z INFO Worker] Version: 2.323.0
+[2025-05-13 16:26:12Z INFO Worker] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-05-13 16:26:12Z INFO Worker] Culture: en-US
+[2025-05-13 16:26:12Z INFO Worker] UI Culture: en-US
+[2025-05-13 16:26:12Z INFO Worker] Waiting to receive the job message from the channel.
+[2025-05-13 16:26:12Z INFO ProcessChannel] Receiving message of length 19631, with hash '6d60cbd82de36d228f701de925ce30d10aa00380b380d2794358147f5e0b7fe7'
+[2025-05-13 16:26:12Z INFO Worker] Message received.
+[2025-05-13 16:26:12Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/notify-staging.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 12,
+        "col": 15,
+        "lit": "Send Telegram message"
+      },
+      "contextName": "__run",
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 15,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 15,
+              "col": 11,
+              "lit": "TELEGRAM_TOKEN"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 15,
+              "col": 27,
+              "expr": "secrets.TELEGRAM_TOKEN"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 16,
+              "col": 11,
+              "lit": "TELEGRAM_CHAT_ID"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 16,
+              "col": 29,
+              "expr": "secrets.TELEGRAM_CHAT_ID"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 17,
+              "col": 14,
+              "expr": "format('# Lấy thông tin từ GitHub event (github.event)\n$actor = $env:GITHUB_ACTOR\n$repo = $env:GITHUB_REPOSITORY\n$commitMessage = \"{0}\"\n$commitHash = \"{1}\"\n$commitUrl = \"https://github.com/$repo/commit/$commitHash\"\n$changedFiles = {2} # Lấy danh sách tệp thay đổi trong commit\n\n# Tạo nội dung tin nhắn\n$message = @\"\nNew Push to Main\nBy: $actor\nRepo: $repo\nCommit: $commitHash\nMessage: $commitMessage\nChanged Files:\n  $changedFiles\nLink: $commitUrl\n\"@\n\nWrite-Host \"Sending Telegram message:\"\n  Write-Host $message\n\n  # Encode UTF-8 để tránh lỗi ký tự Unicode\n  $payload = @{{\n  chat_id = \"$env:TELEGRAM_CHAT_ID\"\n  text    = $message\n  }} | ConvertTo-Json -Depth 10\n\n  $utf8Bytes = [System.Text.Encoding]::UTF8.GetBytes($payload)\n  $utf8Body = [System.Text.Encoding]::UTF8.GetString($utf8Bytes)\n\n  # Gửi tin nhắn đến Telegram\n  Invoke-RestMethod -Uri \"https://api.telegram.org/bot$env:TELEGRAM_TOKEN/sendMessage\" `\n  -Method Post `\n  -ContentType \"application/json\" `\n  -Body $utf8Body\n', github.event.head_commit.message, github.event.head_commit.id, github.event.head_commit.modified)"
+            }
+          },
+          {
+            "key": "shell",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 13,
+              "col": 16,
+              "lit": "powershell"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "5a19922f-387d-4e42-9dcf-82e0bb957af4",
+      "name": "__run"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "TELEGRAM_CHAT_ID": {
+      "value": "***",
+      "isSecret": true
+    },
+    "TELEGRAM_TOKEN": {
+      "value": "***",
+      "isSecret": true
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "false"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "notify"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "8ab85d14-6b32-4a7f-aa00-c584dee28808.notify.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "notify"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "8ab85d14-6b32-4a7f-aa00-c584dee28808",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "8ab85d14-6b32-4a7f-aa00-c584dee28808",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "00c1bb44-3064-5cf0-a4b3-a4d502b1f24b",
+  "jobDisplayName": "notify",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://acghubeus2.actions.githubusercontent.com/msXd7nkQ89USSZrPyml6DqYAQGPEuvHtqU8b9dELyziudQrTf1/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus24.actions.githubusercontent.com/msXd7nkQ89USSZrPyml6DqYAQGPEuvHtqU8b9dELyziudQrTf1/",
+          "GenerateIdTokenUrl": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-1-azure-eastus.actions.githubusercontent.com/36/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "dea44712a5b06bebb8217577a068d8a4620cee77"
+        },
+        {
+          "k": "repository",
+          "v": "Hungpham2k4/test"
+        },
+        {
+          "k": "repository_owner",
+          "v": "Hungpham2k4"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "115924690"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/Hungpham2k4/test.git"
+        },
+        {
+          "k": "run_id",
+          "v": "15001793916"
+        },
+        {
+          "k": "run_number",
+          "v": "65"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "actor_id",
+          "v": "115924690"
+        },
+        {
+          "k": "actor",
+          "v": "Hungpham2k4"
+        },
+        {
+          "k": "workflow",
+          "v": "Notify on Push to Main"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "dea44712a5b06bebb8217577a068d8a4620cee77"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "a1ec9e025251f7607bdf08eceb40041eee06843d"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "22.phamviethung.12a12@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Hungpham2k4"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Hungpham2k4"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "22.phamviethung.12a12@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Hungpham2k4"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Hungpham2k4"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "dea44712a5b06bebb8217577a068d8a4620cee77"
+                        },
+                        {
+                          "k": "message",
+                          "v": "test push 123"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2025-05-13T23:25:51+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "ef5be8c290f8282bd2d130a924370910463178ec"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/Hungpham2k4/test/commit/dea44712a5b06bebb8217577a068d8a4620cee77"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/Hungpham2k4/test/compare/a1ec9e025251...dea44712a5b0"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "22.phamviethung.12a12@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Hungpham2k4"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Hungpham2k4"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "22.phamviethung.12a12@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Hungpham2k4"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Hungpham2k4"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "dea44712a5b06bebb8217577a068d8a4620cee77"
+                    },
+                    {
+                      "k": "message",
+                      "v": "test push 123"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2025-05-13T23:25:51+07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "ef5be8c290f8282bd2d130a924370910463178ec"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/Hungpham2k4/test/commit/dea44712a5b06bebb8217577a068d8a4620cee77"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "115924690+Hungpham2k4@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "Hungpham2k4"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/Hungpham2k4/test.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1746946234.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "Hungpham2k4/test"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/Hungpham2k4/test.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Hungpham2k4/test"
+                    },
+                    {
+                      "k": "id",
+                      "v": 981462424.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "JavaScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "test"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOOn_tmA"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/115924690?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "115924690+Hungpham2k4@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/Hungpham2k4"
+                          },
+                          {
+                            "k": "id",
+                            "v": 115924690.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "Hungpham2k4"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Hungpham2k4"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOBuje0g"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/Hungpham2k4/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/Hungpham2k4"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1747153528.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 123662.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:Hungpham2k4/test.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/Hungpham2k4/test"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2025-05-13T16:15:47Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/Hungpham2k4/test"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/115924690?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Hungpham2k4"
+                    },
+                    {
+                      "k": "id",
+                      "v": 115924690.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "Hungpham2k4"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOBuje0g"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/Hungpham2k4/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/Hungpham2k4"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "Hungpham2k4/test/.github/workflows/notify-staging.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "dea44712a5b06bebb8217577a068d8a4620cee77"
+        },
+        {
+          "k": "repository_id",
+          "v": "981462424"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "Hungpham2k4"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOBuje0g"
+}
+[2025-05-13 16:26:12Z INFO JobRunner] Job ID 00c1bb44-3064-5cf0-a4b3-a4d502b1f24b
+[2025-05-13 16:26:12Z INFO ConfigurationStore] currentAssemblyLocation: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin\Runner.Worker.dll
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO ConfigurationStore] binPath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO ConfigurationStore] RootFolder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'Runner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner'
+[2025-05-13 16:26:12Z INFO ConfigurationStore] ConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated'
+[2025-05-13 16:26:12Z INFO ConfigurationStore] MigratedConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.runner_migrated
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 16:26:12Z INFO ConfigurationStore] CredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated'
+[2025-05-13 16:26:12Z INFO ConfigurationStore] MigratedCredFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials_migrated
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'Service': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service'
+[2025-05-13 16:26:12Z INFO ConfigurationStore] ServiceConfigFilePath: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.service
+[2025-05-13 16:26:12Z INFO ConfigurationStore] Read setting file: 306 chars
+[2025-05-13 16:26:12Z INFO JobRunner] Initializing launch client
+[2025-05-13 16:26:12Z INFO JobServerQueue] Initializing results client
+[2025-05-13 16:26:12Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2025-05-13 16:26:12Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2025-05-13 16:26:12Z INFO JobServerQueue] Start process web console line queue.
+[2025-05-13 16:26:12Z INFO JobServerQueue] Start process file upload queue.
+[2025-05-13 16:26:12Z INFO JobServerQueue] Start results file upload queue.
+[2025-05-13 16:26:12Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-05-13 16:26:12Z INFO JobServerQueue] Start process timeline update queue.
+[2025-05-13 16:26:12Z INFO ExecutionContext] Initialize GitHub context
+[2025-05-13 16:26:12Z INFO ExecutionContext] Initialize Env context
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:26:12Z INFO JobRunner] Starting the job execution context.
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:26:12Z INFO JobRunner] Validating directory permissions for: 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Tools': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_tool'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Temp': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_temp'
+[2025-05-13 16:26:12Z INFO JobRunner] Getting job extension.
+[2025-05-13 16:26:12Z INFO JobRunner] Initialize job. Getting all job steps.
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'Credentials': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.credentials'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known config file 'SetupInfo': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\.setup_info'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:12Z INFO HostContext] Well known directory 'Work': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work'
+[2025-05-13 16:26:12Z INFO PipelineDirectoryManager] Loading tracking config if exists: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_PipelineMapping\Hungpham2k4/test\PipelineFolder.json
+[2025-05-13 16:26:12Z ERR  JobExtension] Caught exception from JobExtension Initialization: Newtonsoft.Json.JsonReaderException: Invalid property identifier character: <. Path 'repositories', line 11, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at GitHub.Runner.Sdk.StringUtil.ConvertFromJson[T](String value)
+   at GitHub.Runner.Sdk.IOUtil.LoadObject[T](String path, Boolean required)
+   at GitHub.Runner.Worker.TrackingManager.LoadIfExists(IExecutionContext executionContext, String file)
+   at GitHub.Runner.Worker.PipelineDirectoryManager.PrepareDirectory(IExecutionContext executionContext, WorkspaceOptions workspace)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+[2025-05-13 16:26:12Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "aa9e6dab-6534-4383-87a2-51702c688ef0",
+  "result": "failed",
+  "errorMessages": [
+    "Invalid property identifier character: <. Path 'repositories', line 11, position 0."
+  ],
+  "executionTimeInSeconds": 1,
+  "startTime": "2025-05-13T16:26:12.831915Z",
+  "finishTime": "2025-05-13T16:26:12.8487926Z"
+}.
+[2025-05-13 16:26:12Z ERR  JobRunner] Job initialize failed.
+[2025-05-13 16:26:12Z ERR  JobRunner] Caught exception from InitializeJob: Newtonsoft.Json.JsonReaderException: Invalid property identifier character: <. Path 'repositories', line 11, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at GitHub.Runner.Sdk.StringUtil.ConvertFromJson[T](String value)
+   at GitHub.Runner.Sdk.IOUtil.LoadObject[T](String path, Boolean required)
+   at GitHub.Runner.Worker.TrackingManager.LoadIfExists(IExecutionContext executionContext, String file)
+   at GitHub.Runner.Worker.PipelineDirectoryManager.PrepareDirectory(IExecutionContext executionContext, WorkspaceOptions workspace)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
+[2025-05-13 16:26:12Z INFO JobRunner] Shutting down the job server queue.
+[2025-05-13 16:26:12Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2025-05-13 16:26:12Z INFO Worker] Listening for cancel message from the channel.
+[2025-05-13 16:26:12Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2025-05-13 16:26:13Z INFO ResultServer] Successfully started websocket client.
+[2025-05-13 16:26:13Z INFO JobServerQueue] All queue process task stopped.
+[2025-05-13 16:26:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'aa9e6dab-6534-4383-87a2-51702c688ef0', success rate: 1/1.
+[2025-05-13 16:26:13Z INFO JobServerQueue] Web console line queue drained.
+[2025-05-13 16:26:13Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2025-05-13 16:26:13Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2025-05-13 16:26:13Z INFO JobServerQueue] File upload queue drained.
+[2025-05-13 16:26:13Z INFO JobServerQueue] Starting results-based upload queue...
+[2025-05-13 16:26:13Z INFO JobServerQueue] Uploading 2 file(s) in one shot through results service.
+[2025-05-13 16:26:13Z INFO JobServerQueue] Got a step log file to send to results service.
+[2025-05-13 16:26:13Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\blocks\8ab85d14-6b32-4a7f-aa00-c584dee28808_aa9e6dab-6534-4383-87a2-51702c688ef0.1
+[2025-05-13 16:26:15Z INFO JobServerQueue] Got a job log file to send to results service.
+[2025-05-13 16:26:15Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\blocks\8ab85d14-6b32-4a7f-aa00-c584dee28808_00c1bb44-3064-5cf0-a4b3-a4d502b1f24b.1
+[2025-05-13 16:26:16Z INFO JobServerQueue] Tried to upload 2 file(s) to results, success rate: 2/2.
+[2025-05-13 16:26:16Z INFO JobServerQueue] Results upload queue drained.
+[2025-05-13 16:26:17Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2025-05-13 16:26:17Z INFO JobServerQueue] Timeline update queue drained.
+[2025-05-13 16:26:17Z INFO JobServerQueue] Disposing job server ...
+[2025-05-13 16:26:17Z INFO JobServerQueue] Disposing results server ...
+[2025-05-13 16:26:17Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2025-05-13 16:26:17Z INFO TempDirectoryManager] Cleaning runner temp folder: D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_work\_temp
+[2025-05-13 16:26:17Z INFO HostContext] Well known directory 'Bin': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\bin'
+[2025-05-13 16:26:17Z INFO HostContext] Well known directory 'Root': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner'
+[2025-05-13 16:26:17Z INFO HostContext] Well known directory 'Diag': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag'
+[2025-05-13 16:26:17Z INFO HostContext] Well known config file 'Telemetry': 'D:\VTI Academy\DTN2404\Spring Framework\blog-app\actions-runner\_diag\.telemetry'
+[2025-05-13 16:26:17Z INFO JobRunner] Raising job completed against run service
+[2025-05-13 16:26:17Z INFO Worker] Job completed.
